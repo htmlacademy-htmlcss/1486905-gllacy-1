@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
-* Студент: [Екатерина Рудакова](https://up.htmlacademy.ru/htmlcss-individual/1/user/1486905).
-* Наставник: `Неизвестно`.
+- Студент: [Екатерина Рудакова](https://up.htmlacademy.ru/htmlcss-individual/1/user/1486905).
+- Наставник: [Шевцов Ярослав] (https://htmlacademy.ru/profile/redx)
 
 ---
 
