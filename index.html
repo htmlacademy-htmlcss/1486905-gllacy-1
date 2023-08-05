@@ -7,14 +7,12 @@
   <body>
     <header class="page-header">
       <nav class="navigation">
+        <a class="navigation-link" href="index.html">
+          <span class="visually-hidden">
+          Логотип
+        </span>
+      </a>
         <ul class="navigation-list">
-          <li class="navigation-item">
-            <a class="navigation-link" href="index.html">
-              <span class="visually-hidden">
-              Логотип
-            </span>
-          </a>
-          </li>
           <li class="navigation-item">
             <a class="navigation-link" href="catalog.html">Каталог</a>
           </li>
@@ -54,11 +52,29 @@
     <main class="main-index">
       <h1 class="visually-hidden">Магазин "Глэйси"</h1>
       <article class="slider">
+        <div class="slides">
         <h2 class="h-slider">Нежный пломбир
           с клубничным джемом</h2>
           <p class="p-slider">Натуральное мороженое из свежих сливок
             и молока с вкуснейшим клубничным джемом – это идеальный десерт для всей семьи. </p>
-            <img class="img-slider" src="#" alt="Изображение мороженого на слайдере">
+            <img class="img-slider" src="#" alt="Нежный пломбир
+            с клубничным джемом">
+          </div>
+
+          <div class="slides">
+            <h2 class="h-slider">Сливочное мороженое со вкусом банана</h2>
+              <p class="p-slider">Сливочное мороженое с ярким банановым вкусом подарит вам свежесть и наслаждение даже в самый жаркий летний день.  </p>
+                <img class="img-slider" src="#" alt="Сливочное мороженое со вкусом банана">
+            </div>
+
+
+    <div class="slides">
+      <h2 class="h-slider">Карамельный пломбир
+        с маршмеллоу</h2>
+        <p class="p-slider">Необычный сладкий десерт с карамельным топпингом и кусочками зефира завоюет сердца сладкоежек всех возрастов.  </p>
+          <img class="img-slider" src="#" alt="Карамельный пломбир
+          с маршмеллоу">
+    </div>
             <button class="slider-button slider-prev" type="button">
               <span class="visually-hidden">Предыдущее изображение</span>
             </button>
@@ -72,15 +88,13 @@
                   <span class="visually-hidden">1 фото</span>
                 </button>
               </li>
-            </ol>
-            <ol class="slider-pagination">
+
               <li class="slider-pagination-item">
                 <button class="slider-pagination-button slider-pagination-button-current" type="button">
                   <span class="visually-hidden">2 фото</span>
                 </button>
               </li>
-            </ol>
-            <ol class="slider-pagination">
+
               <li class="slider-pagination-item">
                 <button class="slider-pagination-button slider-pagination-button-current" type="button">
                   <span class="visually-hidden">3 фото</span>
@@ -88,73 +102,7 @@
               </li>
             </ol>
       </article>
-      <article class="slider">
-      <h2 class="h-slider">Сливочное мороженое со вкусом банана</h2>
-        <p class="p-slider">Сливочное мороженое с ярким банановым вкусом подарит вам свежесть и наслаждение даже в самый жаркий летний день.  </p>
-          <img class="img-slider" src="#" alt="Изображение мороженого на слайдере">
-          <button class="slider-button slider-prev" type="button">
-            <span class="visually-hidden">Предыдущее изображение</span>
-          </button>
-          <button class="slider-button slider-next" type="button">
-            <span class="visually-hidden">Следующее изображение</span>
-          </button>
-          <button class="button-slider">Заказать</button>
-          <ol class="slider-pagination">
-            <li class="slider-pagination-item">
-              <button class="slider-pagination-button slider-pagination-button-current" type="button">
-                <span class="visually-hidden">1 фото</span>
-              </button>
-            </li>
-          </ol>
-          <ol class="slider-pagination">
-            <li class="slider-pagination-item">
-              <button class="slider-pagination-button slider-pagination-button-current" type="button">
-                <span class="visually-hidden">2 фото</span>
-              </button>
-            </li>
-          </ol>
-          <ol class="slider-pagination">
-            <li class="slider-pagination-item">
-              <button class="slider-pagination-button slider-pagination-button-current" type="button">
-                <span class="visually-hidden">3 фото</span>
-              </button>
-            </li>
-          </ol>
-    </article>
-    <article class="slider">
-      <h2 class="h-slider">Карамельный пломбир
-        с маршмеллоу</h2>
-        <p class="p-slider">Необычный сладкий десерт с карамельным топпингом и кусочками зефира завоюет сердца сладкоежек всех возрастов.  </p>
-          <img class="img-slider" src="#" alt="Изображение мороженого на слайдере">
-          <button class="slider-button slider-prev" type="button">
-            <span class="visually-hidden">Предыдущее изображение</span>
-          </button>
-          <button class="slider-button slider-next" type="button">
-            <span class="visually-hidden">Следующее изображение</span>
-          </button>
-          <button class="button-slider">Заказать</button>
-          <ol class="slider-pagination">
-            <li class="slider-pagination-item">
-              <button class="slider-pagination-button slider-pagination-button-current" type="button">
-                <span class="visually-hidden">1 фото</span>
-              </button>
-            </li>
-          </ol>
-          <ol class="slider-pagination">
-            <li class="slider-pagination-item">
-              <button class="slider-pagination-button slider-pagination-button-current" type="button">
-                <span class="visually-hidden">2 фото</span>
-              </button>
-            </li>
-          </ol>
-          <ol class="slider-pagination">
-            <li class="slider-pagination-item">
-              <button class="slider-pagination-button slider-pagination-button-current" type="button">
-                <span class="visually-hidden">3 фото</span>
-              </button>
-            </li>
-          </ol>
-    </article>
+
     <ul class="footer-social-list">
       <li class="footer-social-item">
         <a class="button" href="https://t.me/htmlacademy">
@@ -180,17 +128,17 @@
           <h3 class="presents-title">Малинка даром!</h3>
           <p class="presents-text">При покупке 2 кг любого фруктового мороженого добавим в ваш заказ банку малинового варенья бесплатно.</p>
           <img class="presents-img" src="#" alt="Изображение малины">
-          <button class="presents-button" type="button">
-            <span>Хочу подарок!</span>
-          </button>
+
+            <a class="button" href="#">Хочу подарок!</a>
+
         </li>
         <li class="presents-item">
           <h3 class="presents-title">Маршмеллоу даром!</h3>
           <p class="presents-text">При покупке 2 кг пломбира добавим в ваш заказ упаковку нежных зефирок совершенно бесплатно.</p>
           <img class="presents-img" src="#" alt="Изображение маршмеллоу">
-          <button class="presents-button" type="button">
-            <span>Хочу подарок!</span>
-          </button>
+
+            <a class="button" href="#">Хочу подарок!</a>
+
         </li>
       </ul>
     </section>
@@ -331,30 +279,38 @@
               <span class="visually-hidden">Youtube</span>
             </a>
           </li>
+          <li class="footer-social-item">
+            <a class="footer-social-link" href="#">
+              Для поставщиков
+              </a>
+        </li>
+
+        <li class="footer-social-link">
+          <a class="button" href="#">
+            О производстве
+            </a>
+      </li>
+
+      <li class="footer-social-link">
+        <a class="button" href="#">
+          Наши документы
+          </a>
+    </li>
+
+    <li class="footer-social-link">
+      <a class="button" href="#">
+        Экологические стандарты
+        </a>
+  </li>
+
+<li class="footer-social-link">
+          <h2 class="page-footer-title">Сделано в .html academy © 2021</h2>
+          <a class="button" href="https://htmlacademy.ru/">
+            <img class="footer-logo-academy" src="#" alt="Логотип HTML ACADEMY">
+          </a>
+        </li>
         </ul>
         </section>
-
-        <section class="for-suppliers">
-          <h2 class="page-footer-for-suppliers">Для поставщиков</h2>
-        </section>
-
-        <section class="footer-production">
-          <h2 class="page-footer-title">О производстве</h2>
-        </section>
-
-        <section class="footer-documents">
-          <h2 class="page-footer-title">Наши документы</h2>
-        </section>
-
-        <section class="footer-standarts">
-          <h2 class="page-footer-title">Экологические стандарты</h2>
-        </section>
-
-        <section class="footer-social">
-          <h2 class="page-footer-title">Сделано в .html academy © 2021</h2>
-          <img class="footer-logo-academy" src="#" alt="Логотип HTML ACADEMY">
-        </section>
     </footer>
-
   </body>
 </html>
