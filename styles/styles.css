@@ -1,0 +1,250 @@
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/inter-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/inter-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 900;
+  src: url("../fonts/inter-900.woff2") format("woff2");
+  font-display: swap;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  color: #2D3440;
+  background-color: #FEAFC3;
+}
+
+/* Pages */
+
+.page-header {
+  color: #2D3440;
+}
+
+.navigation-link {
+  font-family: "Inter", sans-serif;
+  line-height: 20px;
+  color: #2D3440;
+  font-weight: normal;
+}
+
+.contacts-phone {
+  font-family: "Inter", sans-serif;
+  line-height: 20px;
+  color: #2D3440;
+  font-weight: bold;
+}
+
+.h-slider {
+  line-height: 46px;
+  font-size: 36px;
+}
+
+.p-slider {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.button {
+  line-height: 20px;
+  font-weight: 700;
+  color: #2D3440;
+  text-align: center;
+}
+
+.button-slider {
+  line-height: 20px;
+  font-weight: bold;
+}
+
+/*Presents*/
+
+.style-header {
+  font-size: 32px;
+  line-height: 46px;
+  text-align: center;
+}
+
+.presents-title {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: bold;
+}
+
+.presents-item {
+  background-color:#FF7799 ;
+}
+
+/*product*/
+
+.product-card {
+  background-color:#FCFCFC ;
+}
+
+.product-card-title {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: bold;
+  color: #2D3440;
+  text-align: center;
+}
+
+.product-card-description {
+  color: #2D3440;
+  text-align: center;
+}
+
+.product-card-price {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/*advantages*/
+
+.advantages {
+  background-color: #FFFFFF;
+}
+
+/*newsletter*/
+
+.newsletter-description {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: bold;
+}
+
+.newsletter-button {
+  background-color: #FF2F64;
+  color: #FCFCFC;
+  line-height: 20px;
+}
+
+.newsletter-form {
+  background-color: #fff;
+}
+
+/*appointment*/
+
+.appointment-form {
+  line-height: 20px;
+  font-weight: bold;
+}
+
+/*contacts*/
+
+.contacts-address {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: bold;
+  font-style: normal;
+}
+
+.contacts-description {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: normal;
+}
+
+.footer-contacts-address-phone {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: bold;
+  font-style: normal;
+  color: #2D3440;
+}
+
+/*page-footer*/
+
+.footer-social-link {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: normal;
+  color: #2D3440;
+
+}
+
+.footer-social-link-for-suppliers {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: bold;
+  color: #2D3440;
+}
+
+.page-footer-title {
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: normal;
+}
+
+/*catalog*/
+/*inner-header*/
+
+.inner-header-title {
+  font-size: 32px;
+  line-height: 46px;
+  font-weight: bold;
+}
+
+.breadcrumbs-link {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: bold;
+  color: #2D3440;
+}
+
+/*catalog-products*/
+
+.select-control {
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.catalog-filter-title {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+}
+
+.catalog-filter-item {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.button-filter-item {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: bold;
+  background-color: #FCFCFC;
+}
+
+/*product-list*/
+
+.h-slider {
+  color: #2D3440;
+}
+
+.pagination-link {
+  color: #2D3440;
+}
+
+.pagination-show-more {
+  font-family: "Inter", sans-serif;
+}
