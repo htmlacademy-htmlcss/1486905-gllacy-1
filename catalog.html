@@ -14,7 +14,7 @@
         </span>
   <img class="logo" src="images/logo.svg" width="137" height="55" alt="Логотип GllacyShop">
       </a>
-        <ul class="navigation-list">
+        <ul class="navigation-list navigation-catalog">
           <li class="navigation-item">
             <a class="navigation-link" href="catalog.html">Каталог</a>
           </li>
@@ -55,7 +55,8 @@
       </nav>
     </header>
 
-    <main class="main-inner">
+    <main class="main-container main-inner">
+      <div class="page-container">
       <header class="inner-header">
         <h1 class="inner-header-title">Сливочное мороженое</h1>
         <ul class="breadcrumbs">
@@ -71,7 +72,7 @@
         </ul>
       </header>
       <section class="catalog-products">
-        <h2 class="visually-hidden">Список товаров с фильтрами</h2>
+        <h2 class="visually-hidden" hidden>Список товаров с фильтрами</h2>
 
         <select class="select-control" aria-label="Сортировка">
           <option value="popular">по популярности</option>
@@ -81,7 +82,7 @@
         <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
           <fieldset class="catalog-filter-group">
             <legend class="catalog-filter-title">Жирность:</legend>
-          <ul class="catalog-filter-list">
+          <ul class="catalog-filter-list-fat">
               <li class="catalog-filter-item">
                 <label class="control">
                   <input class="control-input" type="radio" name="product-group" value="0%">
@@ -155,7 +156,7 @@
 
           <button class="button-filter-item" type="submit">Применить</button>
         </form>
-
+        <div class="catalog-container">
         <ul class="product-list">
           <li class="product-card">
           <a class="product-card-link" href="product.html">
@@ -306,6 +307,7 @@
           </a>
         </li>
       </ul>
+    </div>
 
       <ul class="pagination">
         <li class="pagination-item">
@@ -336,8 +338,9 @@
       </ul>
       <button class="button pagination-show-more" type="button">Показать ещё</button>
       </section>
+    </div>
     </main>
-    <footer class="page-footer">
+    <footer class="page-footer page-footer-container">
       <section class="footer-social">
         <h2 class="visually-hidden">Социальные сети</h2>
     <ul class="footer-social-list">
@@ -391,13 +394,11 @@
             </ul>
           </div>
 
-          <div class="footer-social-logo ">
-
+          <div class="footer-social-logo">
           <h2 class="page-footer-title">Сделано в .html academy © 2021</h2>
           <a href="https://htmlacademy.ru/">
             <img class="footer-logo-academy" src="images/logo_htmlacademy.svg" width="93" height="27" alt="Логотип HTML ACADEMY">
           </a>
-
           </div>
     </footer>
   </body>
