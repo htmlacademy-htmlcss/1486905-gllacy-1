@@ -221,15 +221,22 @@ padding-bottom: 48px;
 .advantages {
   background-color: #FFFFFF;
   margin-bottom: 80px;
+  padding-left: 64px;
+  padding-bottom: 80px;
+  padding-top: 56px;
+}
+
+.advantages-image {
+  margin-right: 16px;
 }
 
 .advantages-list {
   margin: 0;
   padding: 0;
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: 505px 505px;
+  gap: 40px 32px;
   list-style: none;
-  flex-wrap: wrap;
 }
 
 .advantages-description {
@@ -238,6 +245,7 @@ padding-bottom: 48px;
 
 .advantages-item {
   margin-bottom: 40px;
+  display: flex;
 }
 
 /*newsletter*/
@@ -250,39 +258,81 @@ padding-bottom: 48px;
 
 .newsletter-div {
   width: 570px;
+  padding: 32px;
 }
 
 .newsletter-description {
-  font-size: 24px;
-  line-height: 30px;
-  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
   margin: 0;
+
+
 }
 
 .newsletter-button {
   background-color: #FF2F64;
   color: #FCFCFC;
   line-height: 20px;
+  text-decoration: none;
 }
 
 .newsletter-form {
   background-color: #fff;
+  display: grid;
+  grid-template-columns: 332px 160px;
+  grid-template-rows: 66px 52px;
+  gap: 42px 14px;
+  padding: 32px;
+}
+
+.newsletter-email {
+  grid-column: 1 / -1;
 }
 
 /*appointment*/
 .appointment {
   margin-bottom: 80px;
+  background-color:#fff;
+  padding: 64px;
+  display: grid;
+  grid-template-columns: 371px 500px;
+  column-gap: 135px;
+}
+
+.appointment-header {
+  text-align: left;
+  margin-bottom: 24px;
 }
 
 .appointment-form {
+  display: grid;
+  grid-template-columns: 117px 287px;
+  gap: 16px 20px;
   line-height: 20px;
   font-weight: bold;
 }
+
+.appointment-form-address {
+  grid-column: 1 / -1;
+}
+
+.field-group {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
 
 /*contacts*/
 
 .contacts {
   margin-bottom: 80px;
+}
+
+.contacts-container {
+  background-color:#FCFCFC;
+  width: 343px;
+  padding: 40px;
 }
 
 .contacts-address {
@@ -304,6 +354,7 @@ padding-bottom: 48px;
   font-weight: bold;
   font-style: normal;
   color: #2D3440;
+  text-decoration: none;
 }
 
 /*page-footer*/
@@ -343,6 +394,10 @@ padding-bottom: 48px;
   color: #2D3440;
   text-decoration: none;
   margin-right: 8px;
+}
+
+.footer-social-link-academy {
+  text-decoration: underline;
 }
 
 .footer-social-for-suppliers{
