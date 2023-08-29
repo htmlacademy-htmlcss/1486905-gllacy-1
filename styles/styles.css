@@ -83,9 +83,9 @@ body {
 }
 
 .navigation-list {
-   list-style-type: none;
-   display: flex;
-   flex-wrap: wrap;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .navigation-user .navigation-link {
@@ -115,6 +115,7 @@ padding-bottom: 48px;
   line-height: 20px;
   color: #2D3440;
   font-weight: bold;
+  text-decoration: none;
 }
 
 .h-slider {
@@ -133,7 +134,7 @@ padding-bottom: 48px;
   font-weight: 700;
   color: #2D3440;
   text-align: center;
-  list-style-type: none;
+  text-decoration: none;
 }
 
 .button-slider {
@@ -162,13 +163,14 @@ padding-bottom: 48px;
 
 .presents-item {
   background-color:#FF7799;
-  width: 570px;
   display: block;
+  padding: 36px;
 }
 
 .presents-list {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 570px 570px;
+  column-gap: 30px;
   width: 1170px;
 }
 
@@ -186,14 +188,17 @@ padding-bottom: 48px;
 }
 
 .product-container {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 270px 270px 270px 270px;
+  column-gap: 30px;
 }
 
 .product-card {
   background-color:#FCFCFC;
-  width: 270px;
-  margin-bottom: 30px;
+  /* width: 270px; */
+  /*padding: 24px 40px; */
+  justify-content: center;
+  padding-bottom: 24px;
 }
 
 .product-card-title {
@@ -384,7 +389,6 @@ padding-bottom: 48px;
 .footer-social-list {
   list-style: none;
   display: flex;
-  flex-wrap: wrap;
 }
 
 .footer-social-link {
@@ -532,7 +536,9 @@ padding-bottom: 48px;
 
 .product-list {
   list-style-type: none;
-  display: block;
+  display: grid;
+  grid-template-columns: 270px 270px 270px 270px;
+  gap: 40px 30px;
   text-decoration: none;
 }
 
