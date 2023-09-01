@@ -74,12 +74,18 @@
       <section class="catalog-products">
         <h2 class="visually-hidden" hidden>Список товаров с фильтрами</h2>
 
+
+<div class="select-control-div">
+  <div>
         <select class="select-control" aria-label="Сортировка">
           <option value="popular">по популярности</option>
           <option value="cheap">сначала дешёвое</option>
           <option value="expensive">сначала дорогое</option>
         </select>
-        <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
+      </div>
+
+          <div>
+            <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
           <fieldset class="catalog-filter-group">
             <legend class="catalog-filter-title">Жирность:</legend>
           <ul class="catalog-filter-list-fat">
@@ -114,7 +120,11 @@
               </li>
             </ul>
           </fieldset>
+        </form>
+          </div>
 
+  <div>
+  <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
           <fieldset class="catalog-filter-group">
             <legend class="catalog-filter-title">Наполнители:</legend>
             <ul class="catalog-filter-list">
@@ -153,9 +163,12 @@
           </li>
           </ul>
           </fieldset>
+        </form>
+        </div>
 
           <button class="button-filter-item" type="submit">Применить</button>
         </form>
+      </div>
         <div class="catalog-container">
         <ul class="product-list">
           <li class="product-card">
