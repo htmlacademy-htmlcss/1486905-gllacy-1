@@ -483,8 +483,8 @@ padding-bottom: 48px;
   /* grid-template-columns: 196px 196px 383px; */
   /* column-gap: 24px; */
   display: flex;
-  flex-wrap: wrap;
   align-items: baseline;
+  margin-bottom: 44px;
 }
 
 .select-control {
