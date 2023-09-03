@@ -76,55 +76,45 @@
 
 
 <div class="select-control-div">
-  <div>
+  <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
+  <div class="catalog-filter-row">
         <select class="select-control" aria-label="Сортировка">
           <option value="popular">по популярности</option>
           <option value="cheap">сначала дешёвое</option>
           <option value="expensive">сначала дорогое</option>
         </select>
-      </div>
-
-          <div class="catalog-filter-div">
-            <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
           <fieldset class="catalog-filter-group">
             <legend class="catalog-filter-title">Жирность:</legend>
           <ul class="catalog-filter-list-fat">
               <li class="catalog-filter-item">
                 <label class="control">
                   <input class="control-input" type="radio" name="product-group" value="0%">
-
               0%
                 </label>
               </li>
               <li class="catalog-filter-item">
                 <label class="control">
                   <input class="control-input" type="radio" name="product-group" value="before10%" checked>
-
               до 10%
                 </label>
               </li>
               <li class="catalog-filter-item">
                 <label class="control">
                   <input class="control-input" type="radio" name="product-group" value="before30%">
-
               до 30%
                 </label>
               </li>
-
               <li class="catalog-filter-item">
                 <label class="control">
                   <input class="control-input" type="radio" name="product-group" value="after30%">
-
               выше 30%
                 </label>
               </li>
             </ul>
           </fieldset>
-        </form>
-          </div>
+        </div>
 
-  <div class="catalog-filter-div">
-  <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
+  <div class="catalog-filter-row">
           <fieldset class="catalog-filter-group">
             <legend class="catalog-filter-title">Наполнители:</legend>
             <ul class="catalog-filter-list">
@@ -163,10 +153,9 @@
           </li>
           </ul>
           </fieldset>
-        </form>
-        </div>
           <button class="button-filter-item" type="submit">Применить</button>
-      </div>
+  </div>
+</form>
         <div class="catalog-container">
         <ul class="product-list">
           <li class="product-card">
