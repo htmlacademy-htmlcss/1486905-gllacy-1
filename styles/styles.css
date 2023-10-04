@@ -157,6 +157,24 @@ body {
   border: none;
 }
 
+.pagination-item:hover {
+  background-color: rgba(252, 252, 252, 0.5);
+}
+
+.pagination-item:active {
+  background-color: rgba(252, 252, 252, 0.5);
+  box-shadow: 0 0 0 1px rgba(252, 252, 252, 1);
+}
+
+.pagination-item:focus {
+  background-color: rgba(252, 252, 252, 0.5);
+  box-shadow: 0 0 0 1px rgba(45, 52, 64, 1);
+}
+
+.pagination-item {
+  border-radius: 50%;
+  width: 24px;
+}
 .main-container {
 flex-grow: 1;
 padding-top: 136px;
@@ -509,14 +527,68 @@ padding-bottom: 48px;
   background-size: 24px 24px;
 }
 
+.footer-social-telegram:hover {
+  background-image: url("../images/telegram-hover.svg");
+  height: 24px;
+  width: 24px;
+}
+
+.footer-social-telegram:active {
+  background-image: url("../images/telegram-active.svg");
+  height: 24px;
+  width: 24px;
+}
+
+.footer-social-telegram:focus {
+  background-image: url("../images/telegram-focus.svg");
+  height: 24px;
+  width: 24px;
+}
+
 .footer-social-telegram {
   background-image: url("../images/telegram.svg");
   height: 24px;
   width: 24px;
 }
 
+.footer-social-vk:hover {
+  background-image: url("../images/vk-hover.svg");
+  height: 24px;
+  width: 24px;
+}
+
+.footer-social-vk:active {
+  background-image: url("../images/vk-active.svg");
+  height: 24px;
+  width: 24px;
+}
+
+.footer-social-vk:focus {
+  background-image: url("../images/vk-focus.svg");
+  height: 24px;
+  width: 24px;
+}
+
 .footer-social-vk {
   background-image: url("../images/vk.svg");
+  height: 24px;
+  width: 24px;
+}
+
+.footer-social-youtube:hover {
+  background-image: url("../images/youtube-hover.svg");
+  height: 24px;
+  width: 24px;
+}
+
+.footer-social-youtube:active {
+  background-image: url("../images/youtube-active.svg");
+  height: 24px;
+  width: 24px;
+}
+
+.footer-social-youtube:focus {
+  background-image: url("../images/youtube-focus.svg");
   height: 24px;
   width: 24px;
 }
@@ -649,18 +721,20 @@ padding-bottom: 48px;
 
 .catalog-filter-group {
   margin-right: 16px;
+  border-width: 0;
 }
 
 .select-control {
   font-size: 14px;
   line-height: 18px;
-  max-height: 36px;
+  min-height: 36px;
   display: flex;
   flex-wrap: wrap;
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 16px;
   margin-right: 24px;
+  border-width: 0;
 }
 
 .catalog-container {
@@ -703,8 +777,22 @@ padding-bottom: 48px;
   font-size: 14px;
   line-height: 20px;
   font-weight: bold;
-  background-color: #FCFCFC;
+  background-color: rgba(252, 252, 252, 0.3);
+  box-shadow: 0 0 0 2px rgba(252, 252, 252, 1);
 }
+
+.catalog-decor {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  background-color: rgba(252, 252, 252, 0.3);
+  border-radius: 25px 25px 25px 25px;
+  padding: 12px 32px;
+  display: flex;
+  justify-content: space-between;
+}
+
+
 
 /*product-list*/
 
@@ -758,6 +846,7 @@ padding-bottom: 48px;
   font-family: "Inter", sans-serif;
   min-width: 179px;
   margin: 0 auto;
+  font-size: 16px;
 }
 
 .product-card-button {
