@@ -118,16 +118,6 @@ body {
   align-items: center;
 }
 
-
-.navigation-icon {
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  margin: auto;
-  padding: 0;
-}
-
 /*slider*/
 
 .slider {
@@ -192,6 +182,7 @@ padding-bottom: 48px;
   color: #2D3440;
   font-weight: bold;
   text-decoration: none;
+  margin-right: 16px;
 }
 
 .h-slider {
@@ -521,82 +512,67 @@ padding-bottom: 48px;
 /*page-footer*/
 
 .button-link {
-  display: block;
+  display: inline-flex;
   background-repeat: no-repeat;
   background-position: center;
   background-size: 24px 24px;
+  transition: 0.3s;
+  border-radius: 50px;
 }
 
 .footer-social-telegram:hover {
-  background-image: url("../images/telegram-hover.svg");
-  height: 24px;
-  width: 24px;
+  box-shadow: 0 0 0 2px rgba(252, 252, 252, 0.5);
+  fill:rgba(45, 52, 64, 1);
 }
 
 .footer-social-telegram:active {
-  background-image: url("../images/telegram-active.svg");
-  height: 24px;
-  width: 24px;
+  background-color: rgba(252, 252, 252, 0.5);
 }
 
 .footer-social-telegram:focus {
-  background-image: url("../images/telegram-focus.svg");
-  height: 24px;
-  width: 24px;
+  background-color: rgba(45, 52, 64, 1);
+  box-shadow: 0 0 0 2px rgba(45, 52, 64, 1);
+
 }
 
 .footer-social-telegram {
-  background-image: url("../images/telegram.svg");
-  height: 24px;
-  width: 24px;
+
 }
 
 .footer-social-vk:hover {
-  background-image: url("../images/vk-hover.svg");
-  height: 24px;
-  width: 24px;
+  box-shadow: 0 0 0 2px rgba(252, 252, 252, 0.5);
+  fill:rgba(45, 52, 64, 1);
 }
 
 .footer-social-vk:active {
-  background-image: url("../images/vk-active.svg");
-  height: 24px;
-  width: 24px;
+  background-color: rgba(252, 252, 252, 0.5);
 }
 
 .footer-social-vk:focus {
-  background-image: url("../images/vk-focus.svg");
-  height: 24px;
-  width: 24px;
+  background-color: rgba(45, 52, 64, 1);
+  box-shadow: 0 0 0 2px rgba(45, 52, 64, 1);
 }
 
 .footer-social-vk {
-  background-image: url("../images/vk.svg");
-  height: 24px;
-  width: 24px;
+
 }
 
 .footer-social-youtube:hover {
-  background-image: url("../images/youtube-hover.svg");
-  height: 24px;
-  width: 24px;
+  box-shadow: 0 0 0 2px rgba(252, 252, 252, 0.5);
+  fill:rgba(45, 52, 64, 1);
 }
 
 .footer-social-youtube:active {
-  background-image: url("../images/youtube-active.svg");
-  height: 24px;
-  width: 24px;
+  background-color: rgba(252, 252, 252, 0.5);
 }
 
 .footer-social-youtube:focus {
-  background-image: url("../images/youtube-focus.svg");
-  height: 24px;
-  width: 24px;
+  background-color: rgba(45, 52, 64, 1);
+  box-shadow: 0 0 0 2px rgba(45, 52, 64, 1);
 }
 
 .footer-social-youtube {
-  background-image: url("../images/youtube.svg");
-  height: 24px;
-  width: 24px;
+
 }
 
 .footer-social-ul{
