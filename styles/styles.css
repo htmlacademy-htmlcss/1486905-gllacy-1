@@ -163,7 +163,7 @@ body {
 
 .pagination-item {
   border-radius: 50%;
-  width: 24px;
+
 }
 .main-container {
 flex-grow: 1;
@@ -330,6 +330,7 @@ padding-bottom: 48px;
 
 .advantages-image {
   margin-right: 16px;
+  flex-shrink: 0;
 }
 
 .advantages-list {
@@ -815,7 +816,7 @@ padding-bottom: 48px;
 .pagination-link {
   color: #2D3440;
   text-decoration: none;
-  padding: 24px 24px;
+  padding: 2px 8px;
 }
 
 .pagination-show-more {
