@@ -124,20 +124,147 @@ body {
   margin-bottom: 80px;
 }
 
+.content-slider {
+  flex-shrink: 0;
+  margin-right: 26px;
+  margin-left: 70px;
+}
+
+.slider-prev {
+  left: 320px;
+}
+
+.slider-next {
+  left: 0;
+}
+
+.d-none {
+  display: none;
+}
+
+.slider-imags {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.slides.active {
+  position: relative;
+  transform: scale(1);
+  opacity: 1;
+}
+
+.slides {
+  transform: scale(0.5);
+  opacity: 0.4;
+}
+
+
+.slider-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.slider-controls {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: space-between;
+}
+
+.button-slider {
+  margin-left: 70px;
+}
+
+.img-slider{
+  display: block;
+}
+
+.img-wrapper {
+  position: relative;
+}
+
+.img-substrate {
+  position: absolute;
+  top: 50%;
+  z-index: -1;
+  transform: translateY(-50%);
+}
+
 .slider-button {
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
   border:none;
+  background-position:center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  display: block;
+  border-radius: 38px;
+  background-color: rgba(252, 252, 252, 0.3);
+  width: 38px;
+  height: 38px;
+  position: relative;
+  outline: 2px solid rgba(252, 252, 252, 1);
+}
+
+
+.slider-button:hover {
+  background-color: rgba(252, 252, 252, 1);
+}
+
+.slider-button:active {
+  background-color: rgba(252, 252, 252, 0.5);
+}
+
+.slider-button:focus {
+  outline: 2px solid rgba(45, 52, 64, 1);
+  background-color: rgba(252, 252, 252, 0.3);
+}
+
+.slider-button:disabled {
+  outline: 2px solid rgba(252, 252, 252, 0.3);
+}
+
+.slider-arrow {
+  border:none;
+  background-position:center;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 25%;
+  right: 30%;
+}
+
+.slider-button:hover .slider-arrow {
+  fill: #2D3440;
+}
+
+.slider-button:active .slider-arrow {
+  fill: #2D3440;
+}
+
+.slider-button:focus .slider-arrow {
+  fill: #2D3440;
+}
+
+.slider-button:disabled .slider-arrow {
+  fill: rgba(252, 252, 252, 0.3);
 }
 
 .slider-pagination {
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .slider-pagination-item {
   margin-right: 8px;
+}
+
+.slider-pagination-buttons {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .slider-pagination-button {
@@ -145,6 +272,27 @@ body {
   height: 12px;
   border-radius: 50%;
   border: none;
+  background-color: rgba(252, 252, 252, 1);
+  cursor: pointer;
+}
+
+.slider-pagination-button:hover {
+  background-color:rgba(252, 252, 252, 0.3);
+  box-shadow: 0 0 0 1px rgba(252, 252, 252, 1);
+}
+
+.slider-pagination-button:active {
+  background-color:rgba(252, 252, 252, 1);
+}
+
+.slider-pagination-button:focus {
+  background-color:rgba(252, 252, 252, 0.3);
+  box-shadow: 0 0 0 1px rgba(45, 52, 64, 1);
+}
+
+
+.slider-pagination-button-current {
+  background-color: rgba(252, 252, 252, 1);
 }
 
 .pagination-item:hover {
@@ -169,6 +317,8 @@ body {
 flex-grow: 1;
 padding-top: 136px;
 padding-bottom: 48px;
+margin-left: 98px;
+margin-right: 98px;
 }
 
 .page-container {
@@ -244,6 +394,20 @@ padding-bottom: 48px;
   margin-bottom: 80px;
 }
 
+.presents-img1 {
+  background-image: url(/images/raspberries.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-position-y: bottom;
+}
+
+.presents-img2 {
+  background-image: url(/images/marshmallow.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-position-y: bottom;
+}
+
 .style-header {
   font-size: 32px;
   line-height: 46px;
@@ -262,6 +426,7 @@ padding-bottom: 48px;
   background-color:#FF7799;
   display: block;
   padding: 36px;
+  border-radius: 20px;
 }
 
 .presents-list {
@@ -271,9 +436,7 @@ padding-bottom: 48px;
   width: 1170px;
 }
 
-.presents-text {
-  margin: 0;
-}
+
 
 /*product*/
 .product{
@@ -286,16 +449,28 @@ padding-bottom: 48px;
 
 .product-container {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  column-gap: 30px;
+  grid-template-columns: repeat(4, 270px);
+  gap: 80px 30px;
+  padding-top: 50px;
 }
 
 .product-card {
   background-color:#FCFCFC;
-  /* width: 270px; */
-  /*padding: 24px 40px; */
   justify-content: center;
   padding-bottom: 24px;
+  border-radius: 20px;
+}
+
+.product-card-image {
+  display: block;
+  margin-top: -50px;
+}
+
+.product-card-raspberries {
+  background-image: url(/images/taste_raspberries.png);
+  background-repeat: no-repeat;
+  background-position: top;
+
 }
 
 .product-card-title {
@@ -326,6 +501,13 @@ padding-bottom: 48px;
   padding-left: 64px;
   padding-bottom: 80px;
   padding-top: 56px;
+  border-radius: 20px;
+}
+
+.advantages-border {
+  margin: 80px auto;
+  border: 24px solid red;
+	border-image: url("/images/advantages-frame.png") 24;
 }
 
 .advantages-image {
@@ -353,28 +535,44 @@ padding-bottom: 48px;
 
 /*newsletter*/
 
+.border {
+  margin: 10px auto;
+  border: 6px solid red;
+	border-image: url("/images/frame.png") 6;
+}
+
 .newsletter {
   display: flex;
   justify-content: space-between;
   margin-bottom: 80px;
 }
 
+.newsletter-email {
+  margin-bottom: 46px;
+}
+
 .newsletter-title {
   line-height: 30px;
   font-size: 24px;
   font-weight: bold;
+  padding-left: 32px;
 }
 
 .newsletter-div {
   width: 570px;
-  padding: 32px;
   margin-right: 30px;
+  background-image: url(/images/news.jpg);
+  background-repeat:round;
+  border-radius:20px;
+  background-size: cover;
 }
 
 .newsletter-description {
   font-size: 16px;
   line-height: 20px;
   margin: 0;
+  padding-left: 32px;
+  padding-top: 32px;
 }
 
 .newsletter-button:hover{
@@ -399,14 +597,16 @@ padding-bottom: 48px;
   font-family: "Inter", sans-serif;
   grid-column: 2;
   box-shadow: 0 0 0 4px rgba(255, 47, 100, 0.3);
+  min-width: 160px;
 }
 
 .newsletter-form {
   background-color: #fff;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
   padding: 32px;
-  width: 570px;
+  width: 558px;
 }
 
 .newsletter-container-one {
@@ -424,16 +624,26 @@ padding-bottom: 48px;
   padding-left: 16px;
   padding-top: 14px;
   padding-bottom: 14px;
+  border-color: rgba(185, 185, 185, 1);
+  border-radius:3px;
 }
 
 /*appointment*/
 .appointment {
   margin-bottom: 80px;
   background-color:#fff;
-  padding: 64px;
   display: grid;
   grid-template-columns: 371px 500px;
   column-gap: 135px;
+  background-image: url(/images/delivery.jpg);
+  background-position: center;
+  background-repeat:no-repeat;
+  border-radius:20px;
+  width: 1170px;
+  height: 534px;
+  padding-top: 64px;
+  padding-left: 100px;
+  background-size:cover;
 }
 
 .appointment-header {
@@ -441,6 +651,14 @@ padding-bottom: 48px;
   margin-bottom: 24px;
 }
 
+.appointment-container {
+  background: rgba(252, 252, 252, 1);
+  height: 406px;
+  padding-top: 40px;
+  padding-left: 40px;
+  padding-right: 40px;
+  border-radius: 20px;
+}
 .appointment-form {
   display: grid;
   grid-template-columns: 117px 152px 135px;
@@ -467,11 +685,32 @@ padding-bottom: 48px;
   margin-bottom: 8px;
 }
 
-.form-label-info {
-  background-image: url("../images/info.svg");
-  background-repeat: no-repeat;
-  background-position: 58px 4px;
-  background-size: 14px 14px;
+
+.tooltip {
+  position: absolute;
+  margin-top: 4px;
+  margin-left: 2px;
+  width: 16px;
+  height: 16px;
+}
+
+.tooltip-toggle {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+  display: block;
+}
+
+.tooltip-icon {
+  width: 100%;
+  height: 100%;
+  color: #242424;
+  display: block;
+}
+
+.tooltip-toggle:hover .tooltip-icon {
+  color: #AF7842;
 }
 
 
@@ -479,12 +718,19 @@ padding-bottom: 48px;
 
 .contacts {
   margin-bottom: 24px;
+  background-image: url(/images/feedback.jpg);
+  background-repeat:round;
+  padding: 64px;
+  background-size:cover;
+  height: 492px;
+  border-radius: 20px;
 }
 
 .contacts-container {
   background-color:#FCFCFC;
   width: 343px;
   padding: 40px;
+  border-radius:20px;
 }
 
 .contacts-address {
@@ -638,9 +884,6 @@ padding-bottom: 48px;
   font-weight: normal;
 }
 
-.footer-social-logo {
-
-}
 
 
 
@@ -786,7 +1029,7 @@ padding-bottom: 48px;
   list-style-type: none;
   display: grid;
   grid-template-columns: 270px 270px 270px 270px;
-  gap: 40px 30px;
+  gap: 90px 30px;
   text-decoration: none;
 }
 
