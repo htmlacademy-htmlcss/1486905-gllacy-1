@@ -54,6 +54,52 @@
               <img class="navigation-icon" src="images/cart.svg" width="14" height="13" alt="Корзина">
               2 товара
             </a>
+            <div class="popover popover-cart">
+              <button class="popover-close-button button button-light">
+                2 товара
+                <span class="visually-hidden">Закрыть</span>
+              </button>
+
+              <div class="popover-content">
+                <h2 class="popover-title">Корзина</h2>
+                <ul class="cart-items-list">
+                  <li class="cart-item">
+                    <img class="cart-img" src="images/cart-malinka.png" width="46px" height="46px" alt="Малинка">
+                    <p class="cart-item-title">Малинка<br>1 кг х 310 ₽</p>
+                    <p class="cart-item-price">310 ₽</p>
+                    <button type="button" class="cart-item-button button">
+                      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12.803 4.13807C13.0634 3.87772 13.0634 3.45561 12.803 3.19526C12.5427 2.93491 12.1206 2.93491 11.8602 3.19526L7.99914 7.05633L4.13807 3.19526C3.87772 2.93491 3.45561 2.93491 3.19526 3.19526C2.93491 3.45561 2.93491 3.87772 3.19526 4.13807L7.05633 7.99914L3.19526 11.8602C2.93491 12.1206 2.93491 12.5427 3.19526 12.803C3.45561 13.0634 3.87772 13.0634 4.13807 12.803L7.99914 8.94195L11.8602 12.803C12.1206 13.0634 12.5427 13.0634 12.803 12.803C13.0634 12.5427 13.0634 12.1206 12.803 11.8602L8.94195 7.99914L12.803 4.13807Z" fill="#2D3440"/>
+                        </svg>
+
+                      <span class="visually-hidden">Удалить из корзины</span>
+                    </button>
+                  </li>
+
+                  <li class="cart-item">
+                    <img class="cart-img" src="images/cart-bublgam.png" width="46px" height="46px" alt="Баблгам">
+                    <p class="cart-item-title">Бабл-гам<br>1,5 кг х 320 ₽</p>
+                    <p class="cart-item-price">480 ₽</p>
+                    <button type="button" class="cart-item-button button">
+                      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12.803 4.13807C13.0634 3.87772 13.0634 3.45561 12.803 3.19526C12.5427 2.93491 12.1206 2.93491 11.8602 3.19526L7.99914 7.05633L4.13807 3.19526C3.87772 2.93491 3.45561 2.93491 3.19526 3.19526C2.93491 3.45561 2.93491 3.87772 3.19526 4.13807L7.05633 7.99914L3.19526 11.8602C2.93491 12.1206 2.93491 12.5427 3.19526 12.803C3.45561 13.0634 3.87772 13.0634 4.13807 12.803L7.99914 8.94195L11.8602 12.803C12.1206 13.0634 12.5427 13.0634 12.803 12.803C13.0634 12.5427 13.0634 12.1206 12.803 11.8602L8.94195 7.99914L12.803 4.13807Z" fill="#2D3440"/>
+                        </svg>
+
+                      <span class="visually-hidden">Удалить из корзины</span>
+                    </button>
+                  </li>
+                  <li class="cart-item cart-item-last">
+                    <p class="cart-item-title">
+                  <button class="button newsletter-button" type="submit">
+                    Оформить заказ
+                  </button>
+                </p>
+                  <p class="cart-item-price">Итого: 790 ₽</p>
+                </li>
+                </ul>
+              </div>
+
+            </div>
           </li>
         </ul>
       </nav>
@@ -181,8 +227,6 @@
           <p class="presents-text">При покупке 2 кг любого фруктового<br>
              мороженого добавим в ваш заказ<br>
               банку малинового варенья бесплатно.</p>
-          <!-- <img class="presents-img" src="images/raspberries.png" width="219" height="268" alt="Изображение малины"> -->
-
             <a class="button" href="#">Хочу подарок!</a>
 
         </li>
@@ -191,10 +235,7 @@
           <p class="presents-text">При покупке 2 кг пломбира добавим<br>
              в ваш заказ упаковку нежных зефирок<br>
             совершенно бесплатно.</p>
-          <!-- <img class="presents-img" src="images/marshmallow.png" width="219" height="268" alt="Изображение маршмеллоу"> -->
-
             <a class="button" href="#">Хочу подарок!</a>
-
         </li>
       </ul>
     </section>
@@ -502,5 +543,60 @@
           <h2 class="page-footer-title">Сделано в <a class="footer-social-link footer-social-link-academy" href='https://htmlacademy.ru/'>.html academy</a> © 2021</h2>
           </div>
     </footer>
+
+    <div class="modal-container modal-container-close">
+      <div class="modal modal-auth">
+        <button class="modal-close-button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <section class="modal-content">
+          <h2 class="modal-title">Мы обязательно ответим вам!</h2>
+          <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
+            <p class="field-group">
+              <label class="visually-hidden" for="name">Имя и фамилия</label>
+              <input class="auth-form-field field" type="text" id="name" placeholder="Имя и фамилия">
+            </p>
+            <p class="field-group">
+            <input class="field"  placeholder="email@example.com" type="email" name="newsletter-email" id="newsletter-email" required>
+          </p>
+            <p class="field-group">
+              <input class="field text-modal" name="msg" placeholder="В свободной форме"></input>
+              </p>
+              <p class="field-group">
+              <button class="button newsletter-button" type="submit">Отправить</button>
+            </p>
+          </form>
+        </section>
+      </div>
+    </div>
+
+    <div class="modal-container-for-auth modal-container-close">
+      <div class="modal-for-auth">
+        <button class="modal-close-button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <section class="modal-content">
+          <h2 class="modal-title">Личный кабинет</h2>
+          <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
+            <p class="field-group">
+              <label class="visually-hidden" for="auth-login">email@example.com</label>
+              <input class="auth-form-field field" type="text" id="auth-login" name="auth-login" placeholder="email@example.com">
+            </p>
+            <p class="field-group">
+              <label class="visually-hidden" for="auth-password">Пароль</label>
+              <input class="auth-form-field field" type="password" id="auth-password" name="auth-password" placeholder="Пароль">
+            </p>
+            <p class="field-group">
+              <button class="button newsletter-button" type="submit">Войти</button>
+            </p>
+            <a class="auth-form-recovery" href="#">Забыли пароль?</a>
+            <a class="auth-form-recovery" href="#">Регистрация</a>
+
+          </form>
+        </section>
+
+      </div>
+
+    </div>
   </body>
 </html>
