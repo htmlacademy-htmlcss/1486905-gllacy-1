@@ -51,6 +51,51 @@
               <img class="navigation-icon" src="images/cart.svg" width="14" height="13" alt="Корзина">
               2 товара
             </a>
+            <div class="popover popover-cart">
+              <button class="popover-close-button button button-light">
+                2 товара
+                <span class="visually-hidden">Закрыть</span>
+              </button>
+
+              <div class="popover-content">
+                <h2 class="popover-title">Корзина</h2>
+                <ul class="cart-items-list">
+                  <li class="cart-item">
+                    <img class="cart-img" src="images/cart-malinka.png" width="46" height="46" alt="Малинка">
+                    <p class="cart-item-title">Малинка<br><span class="cart-item-br">1 кг х 310 ₽</span></p>
+                    <p class="cart-item-price">310 ₽</p>
+                    <button type="button" class="cart-item-button button">
+                      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12.803 4.13807C13.0634 3.87772 13.0634 3.45561 12.803 3.19526C12.5427 2.93491 12.1206 2.93491 11.8602 3.19526L7.99914 7.05633L4.13807 3.19526C3.87772 2.93491 3.45561 2.93491 3.19526 3.19526C2.93491 3.45561 2.93491 3.87772 3.19526 4.13807L7.05633 7.99914L3.19526 11.8602C2.93491 12.1206 2.93491 12.5427 3.19526 12.803C3.45561 13.0634 3.87772 13.0634 4.13807 12.803L7.99914 8.94195L11.8602 12.803C12.1206 13.0634 12.5427 13.0634 12.803 12.803C13.0634 12.5427 13.0634 12.1206 12.803 11.8602L8.94195 7.99914L12.803 4.13807Z" fill="#2D3440"/>
+                        </svg>
+
+                      <span class="visually-hidden">Удалить из корзины</span>
+                    </button>
+                  </li>
+
+                  <li class="cart-item cart-item-lastelement">
+                    <img class="cart-img" src="images/cart-bublgam.png" width="46" height="46" alt="Баблгам">
+                    <p class="cart-item-title">Бабл-гам<br><span class="cart-item-br">1,5 кг х 320 ₽</span></p>
+                    <p class="cart-item-price">480 ₽</p>
+                    <button type="button" class="cart-item-button button">
+                      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12.803 4.13807C13.0634 3.87772 13.0634 3.45561 12.803 3.19526C12.5427 2.93491 12.1206 2.93491 11.8602 3.19526L7.99914 7.05633L4.13807 3.19526C3.87772 2.93491 3.45561 2.93491 3.19526 3.19526C2.93491 3.45561 2.93491 3.87772 3.19526 4.13807L7.05633 7.99914L3.19526 11.8602C2.93491 12.1206 2.93491 12.5427 3.19526 12.803C3.45561 13.0634 3.87772 13.0634 4.13807 12.803L7.99914 8.94195L11.8602 12.803C12.1206 13.0634 12.5427 13.0634 12.803 12.803C13.0634 12.5427 13.0634 12.1206 12.803 11.8602L8.94195 7.99914L12.803 4.13807Z" fill="#2D3440"/>
+                        </svg>
+
+                      <span class="visually-hidden">Удалить из корзины</span>
+                    </button>
+                  </li>
+                  <li class="cart-item cart-item-last">
+                    <p class="cart-item-title cart-item-lasttitle">
+                  <button class="button newsletter-button" type="submit">
+                    Оформить заказ
+                  </button>
+                </p>
+                  <p class="cart-item-price">Итого: 790 ₽</p>
+                </li>
+                </ul>
+              </div>
+            </div>
           </li>
         </ul>
       </nav>
@@ -82,6 +127,7 @@
           <option value="cheap">сначала дешёвое</option>
           <option value="expensive">сначала дорогое</option>
         </select>
+
 
         <div class="range">
           <div class="range-wrapper-inputs">
@@ -180,7 +226,7 @@
           </fieldset>
           <button class="button-filter-item button" type="submit">Применить</button>
   </div>
-</div>
+
 </form>
         <div class="catalog-container">
         <ul class="product-list">
@@ -390,6 +436,7 @@
       <button class="button pagination-show-more" type="button">Показать ещё</button>
       </section>
       </div>
+
     </main>
     <footer class="page-footer page-footer-container">
       <section class="footer-social">
