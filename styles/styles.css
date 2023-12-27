@@ -119,6 +119,7 @@ body {
   align-items: center;
 }
 
+
 /*slider*/
 
 .slider {
@@ -196,18 +197,8 @@ body {
   border-radius: 180px ;
   width: 100%;
   height: 65%;
-}
-
-.img-substrate-strawberry {
-  background: rgba(255, 203, 216, 1);
-}
-
-.img-substrate-banana {
-  background:rgba(159, 200, 255, 1);
-}
-
-.img-substrate-caramel{
-  background: rgba(252, 220, 146, 1);
+  background: #FFCBD8;
+  opacity: 0.4;
 }
 
 .slider-button {
@@ -797,9 +788,7 @@ margin-right: 98px;
 
 }
 
-.footer-social-telegram {
 
-}
 
 .footer-social-vk:hover {
   box-shadow: 0 0 0 2px rgba(252, 252, 252, 0.5);
@@ -815,9 +804,7 @@ margin-right: 98px;
   box-shadow: 0 0 0 2px rgba(45, 52, 64, 1);
 }
 
-.footer-social-vk {
 
-}
 
 .footer-social-youtube:hover {
   box-shadow: 0 0 0 2px rgba(252, 252, 252, 0.5);
@@ -833,9 +820,7 @@ margin-right: 98px;
   box-shadow: 0 0 0 2px rgba(45, 52, 64, 1);
 }
 
-.footer-social-youtube {
 
-}
 
 .footer-social-ul{
   list-style: none;
@@ -1006,13 +991,21 @@ input[type="checkbox"] + span{
   margin-bottom: 16px;
   background-color: rgba(86, 92, 102, 0.3);
   border-radius: 2px;
+  z-index: 9;
+  box-sizing: border-box;
+  left: 16px;
+  right: 16px;
 }
 
 .range-bar {
   position: absolute;
   height: 4px;
   background-color: rgba(86, 92, 102, 1);
+  left: 30px;
+  width: 60px;
+  top: 0;
 }
+
 
 .range-toggle {
   position: absolute;
@@ -1198,9 +1191,7 @@ input[type="checkbox"] + span{
   text-decoration: none;
 }
 
-.product-card-price {
 
-}
 
 .product-card-price-div {
   display: flex;
@@ -1240,6 +1231,7 @@ input[type="checkbox"] + span{
   background-repeat: no-repeat;
   background-size: 32px 32px;
   background-position-x: right;
+
 }
 
 .product-list {
@@ -1328,7 +1320,6 @@ input[type="checkbox"] + span{
   position: fixed;
   top: 0;
   left: 0;
-  display: flex;
   width: 100%;
   height: 100%;
   display: none;
@@ -1380,7 +1371,7 @@ input[type="checkbox"] + span{
 .popover-search{
   position: absolute;
   top: 0;
-  right: 0;
+  right: 25px;
   z-index: 1;
   box-sizing: border-box;
   padding: 24px 16px;
@@ -1394,6 +1385,25 @@ input[type="checkbox"] + span{
 }
 .navigation-item {
   position: relative;
+}
+
+.navigation-item:hover .popover-search {
+  display: block;
+}
+
+.navigation-item:hover .popover-cart {
+  display: block;
+}
+
+.navigation-item:hover .popover-catalog {
+  display: block;
+}
+
+
+.navigation-icon{
+  background: rgba(252, 252, 252, 0.30);
+  border-radius: 20px;
+  margin-right: 16px;
 }
 
 
@@ -1417,6 +1427,11 @@ input[type="checkbox"] + span{
   background-image: url("../images/cart-popover.svg");
   background-repeat: no-repeat;
   background-position: 11px center;
+}
+
+.popover-cart {
+  top: 2px;
+  right: 20px;
 }
 
 
@@ -1520,14 +1535,14 @@ input[type="checkbox"] + span{
 .popover-close-catalog {
   position: absolute;
   top: -40px;
-  right: 0;
+  right: -5px;
   height: 36px;
   width: 117px;
   background-color: rgba(255, 74, 120, 1);
   box-shadow: none;
   background-image: url(../images/arrow-up.svg);
   background-repeat: no-repeat;
-  background-position: 95px 10px;
+  background-position: 90px 10px;
   border-radius: 50px 50px 50px 50px;
   padding: 8px 8px;
   font-size: 16px;
