@@ -1275,6 +1275,13 @@ input[type="checkbox"] + span{
   width: 570px;
 }
 
+.textarea-modal {
+  height: 145px;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+}
+
 .modal-close-button {
   position: absolute;
   padding: 0;
@@ -1302,6 +1309,7 @@ input[type="checkbox"] + span{
 
 .field-group {
   margin-bottom: 16px;
+  font-family: "Inter", sans-serif;
 }
 
 .field-group .button {
@@ -1313,7 +1321,7 @@ input[type="checkbox"] + span{
 }
 
 .modal-container-close {
-  display: none;
+
 }
 
 .modal-container-for-auth {
