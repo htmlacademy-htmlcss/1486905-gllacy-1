@@ -63,9 +63,12 @@ body {
   align-items: center;
   margin-top: 24px;
 }
-
-
-
+.search-link {
+  width: 16px;
+  height: 16px;
+  padding: 8px 8px;
+  border-radius:20px;
+}
 .navigation-user {
   margin-left: auto;
 }
@@ -985,6 +988,10 @@ input[type="checkbox"] + span{
 
 
 /* Range */
+
+.range {
+  margin-bottom: 30px;
+}
 .range-scale {
   position: relative;
   height: 4px;
@@ -995,6 +1002,7 @@ input[type="checkbox"] + span{
   box-sizing: border-box;
   left: 16px;
   right: 16px;
+  width: 164px;
 }
 
 .range-bar {
@@ -1004,6 +1012,20 @@ input[type="checkbox"] + span{
   left: 30px;
   width: 60px;
   top: 0;
+}
+
+.range-decor {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  background-color: rgba(252, 252, 252, 0.3);
+  border-radius: 25px 25px 25px 25px;
+  padding-top: 16px;
+  display: flex;
+  justify-content: space-between;
+  box-sizing:border-box;
+  height: 36px;
+  width: 196px;
 }
 
 
@@ -1321,7 +1343,7 @@ input[type="checkbox"] + span{
 }
 
 .modal-container-close {
-
+  display: none;
 }
 
 .modal-container-for-auth {
@@ -1391,6 +1413,7 @@ input[type="checkbox"] + span{
   border-radius:4px;
   display: none;
 }
+
 .navigation-item {
   position: relative;
 }
