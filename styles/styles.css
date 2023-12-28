@@ -1069,6 +1069,10 @@ input[type="checkbox"] + span{
   margin-right: 5px;
 }
 
+.catalog-sorting {
+  border-width: 0;
+}
+
 .range-input {
   width: 30px;
   padding: 0 2px;
@@ -1109,7 +1113,7 @@ input[type="checkbox"] + span{
 
 .catalog-filter-row {
   display: flex;
-  align-items: center;
+  align-items: baseline;
 }
 
 .catalog-filter-group {
@@ -1135,7 +1139,9 @@ input[type="checkbox"] + span{
 }
 
 .catalog-filter {
-  margin-bottom: 44px;
+  margin-bottom: 60px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .catalog-filter-list-fat {
@@ -1158,6 +1164,8 @@ input[type="checkbox"] + span{
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
+  margin-bottom: 8px;
+  margin-left: 16px;
 }
 
 .catalog-filter-item {
@@ -1172,6 +1180,8 @@ input[type="checkbox"] + span{
   font-weight: bold;
   background-color: rgba(252, 252, 252, 0.3);
   box-shadow: 0 0 0 2px rgba(252, 252, 252, 1);
+  height: 36px;
+  padding: 10px 32px;
 }
 
 .catalog-decor {
@@ -1180,10 +1190,11 @@ input[type="checkbox"] + span{
   line-height: 20px;
   background-color: rgba(252, 252, 252, 0.3);
   border-radius: 25px 25px 25px 25px;
-  padding: 12px 32px;
+  padding: 10px 32px;
   display: flex;
   justify-content: space-between;
   box-sizing:border-box;
+  height: 36px;
 }
 
 .catalog-decor-bar {
