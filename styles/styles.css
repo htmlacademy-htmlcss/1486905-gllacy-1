@@ -61,12 +61,13 @@ body {
   display: flex;
   min-width: 1170px;
   align-items: center;
-  margin-top: 19px;
-  margin-left: 25px;
+  margin-top: 21px;
+  margin-left: 19px;
 }
 
 .navigation-catalog{
-  margin-right: 5px;
+  margin-right: 7px;
+  margin-top: 5px;
 }
 
 .navigation-logo {
@@ -88,11 +89,12 @@ body {
 
 .navigation-tel {
   display: flex;
-  align-items:center;
+  margin-top: -8px;
 }
 
 .navigation-cart{
-  margin-left: -2px;
+  margin-left: -8px;
+  margin-top: -3px;
 }
 
 .navigation-link:hover {
@@ -212,8 +214,9 @@ body {
 }
 
 .button-slider {
-  margin-top: 30px;
+  margin-top: 31px;
   font-size: 16px;
+  margin-left: 2px;
 }
 
 .img-slider{
@@ -393,7 +396,7 @@ margin-right: 98px;
 .p-slider {
   font-size: 18px;
   line-height: 24px;
-  margin-top: -20px;
+  margin-top: -5px;
 }
 
 .button:hover {
@@ -496,7 +499,7 @@ margin-right: 98px;
 
 /*product*/
 .product{
-  margin-bottom: 80px;
+  margin-bottom: 75px;
 }
 
 .product-description {
@@ -513,7 +516,7 @@ margin-right: 98px;
 .product-card {
   background-color:#FCFCFC;
   justify-content: center;
-  padding-bottom: 27px;
+  padding-bottom: 11px;
   border-radius: 8px;
 }
 
@@ -595,7 +598,7 @@ margin-right: 98px;
 
 .newsletter {
   display: flex;
-  margin-bottom: 80px;
+  margin-bottom: 35px;
 }
 
 .newsletter-email {
@@ -658,7 +661,7 @@ margin-right: 98px;
   background-color: #fff;
   display: flex;
   flex-wrap: wrap;
-  padding-top: 24px;
+  padding-top: 27px;
   padding-left: 27px;
   width: 531px;
 }
@@ -690,38 +693,36 @@ margin-right: 98px;
 
 /*appointment*/
 .appointment {
-  margin-bottom: 80px;
-  background-color:#fff;
+  margin-bottom: 71px;
   display: grid;
   grid-template-columns: 371px 500px;
   column-gap: 135px;
   background-image: url(../images/delivery.jpg);
-  background-position: center;
   background-repeat:no-repeat;
   border-radius:20px;
-  padding-top: 20px;
   padding-left: 100px;
-  background-size:cover;
+  padding-bottom: 70px;
+  margin-top: 79px;
 }
 
 .appointment-header {
   text-align: left;
   margin-bottom: 24px;
-  margin-top: 144px;
+  margin-top: 164px;
 }
 
 .appointment-container {
   background: rgba(252, 252, 252, 1);
-  height: 406px;
-  padding-top: 64px;
   padding-left: 40px;
   padding-right: 40px;
-  border-radius: 20px;
-  margin-bottom: 41px;
+  border-radius: 6px;
+  height: 406px;
+  margin-top: 60px;
 }
 
 .appointment-p {
-  margin-bottom: 32px;
+  margin-bottom: 30px;
+  margin-top: 41px;
 }
 
 .appointment-form {
@@ -799,7 +800,7 @@ margin-right: 98px;
 .contacts-container {
   background-color:#FCFCFC;
   width: 295px;
-  padding-top: 23px;
+  padding-top: 27px;
   padding-left: 41px;
   padding-right: 7px;
   padding-bottom: 16px;
@@ -914,7 +915,7 @@ margin-right: 98px;
   display: flex;
   width: 1253px;
   margin: 0 auto;
-  padding: 5px 57px;
+  padding: 9px 57px;
   justify-content: space-between;
 }
 
@@ -999,15 +1000,15 @@ margin-right: 98px;
   padding-top: 32px;
   padding-left: 98px;
   padding-right: 98px;
-  margin-bottom: 62px;
+  margin-bottom: 71px;
 }
 
 .inner-header-title {
   font-size: 32px;
   line-height: 46px;
   font-weight: bold;
-  margin-left: -63px;
-  margin-top: 18px;
+  margin-top: 9px;
+  margin-left: 3px;
 }
 
 .breadcrumbs-link {
@@ -1033,7 +1034,6 @@ margin-right: 98px;
 /*catalog-products*/
 
 .filter-container {
-  margin-left: -79px;
   margin-top: 18px;
 }
 
@@ -1097,6 +1097,8 @@ input[type="checkbox"] + span{
 /* Range */
 
 .range {
+  margin-top: -32px;
+  margin-left: 11px;
 
 }
 .range-scale {
@@ -1179,7 +1181,7 @@ input[type="checkbox"] + span{
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
-  margin-bottom: -11px;
+  margin-bottom: -8px;
   margin-left: 24px;
 }
 .catalog-filter-label {
@@ -1189,6 +1191,9 @@ input[type="checkbox"] + span{
 
 .catalog-sorting {
   border-width: 0;
+  padding: 0;
+  margin-top: -31px;
+  margin-left: -2px;
 }
 
 .range-input {
@@ -1211,8 +1216,7 @@ input[type="checkbox"] + span{
   display: flex;
   padding: 0;
   list-style-type: none;
-  margin-left: -63px;
-  margin-top: 15px;
+  margin-top: 13px;
 }
 
 .breadcrumbs-item {
@@ -1227,18 +1231,24 @@ input[type="checkbox"] + span{
 .catalog-products {
   display: flex;
   flex-direction: column;
-  margin-bottom: 44px;
+  margin-bottom: 32px;
+  margin-top: 53px;
 }
 
 .catalog-filter-row {
   display: flex;
   align-items: baseline;
-  margin-top: -7px;
+  margin-top: -14px;
+  margin-left: -17px;
 }
 
 .catalog-filter-group {
-  margin-right: 16px;
+  margin-right: 24px;
   border-width: 0;
+  padding: 0;
+  margin-top: -30px;
+  margin-left: 15px;
+  margin-bottom: 46px;
 }
 
 .select-control {
@@ -1255,9 +1265,7 @@ input[type="checkbox"] + span{
 }
 
 .catalog-container {
-  width: 1170px;
-  margin-left: -63px;
-  margin-top: 24px;
+  margin-top: -10px;
   margin-bottom: 53px;
 }
 
@@ -1298,7 +1306,7 @@ input[type="checkbox"] + span{
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
-  margin-bottom: 4px;
+  margin-bottom: 9px;
   margin-left: 16px;
 }
 
@@ -1306,8 +1314,8 @@ input[type="checkbox"] + span{
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
-  margin-bottom: 3px;
-  margin-left: 16px;
+  margin-bottom: -3px;
+  margin-left: 15px;
 }
 
 .catalog-filter-item {
@@ -1340,6 +1348,8 @@ input[type="checkbox"] + span{
   justify-content: space-between;
   box-sizing:border-box;
   height: 40px;
+  margin-top: 10px;
+  margin-left: 3px;
 }
 
 .sorting-decor{
@@ -1378,11 +1388,18 @@ input[type="checkbox"] + span{
 }
 
 .product-list {
-  list-style-type: none;
   display: grid;
   grid-template-columns: 270px 270px 270px 270px;
-  gap: 90px 30px;
+  gap: 87px 30px;
   text-decoration: none;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.product-card-svg{
+  margin-top: -16px;
+  margin-right: -16px;
 }
 
 
@@ -1390,8 +1407,8 @@ input[type="checkbox"] + span{
 .product-card-price-div {
   display: flex;
   justify-content: space-around;
-  margin-top: 21px;
-  margin-left: 13px;
+  margin-top: 20px;
+  margin-left: 21px;
 }
 
 .h-slider {
@@ -1399,6 +1416,7 @@ input[type="checkbox"] + span{
   line-height: 46px;
   font-size: 36px;
   font-weight: 900;
+  margin-top: 16px;
 }
 
 .pagination {
@@ -1406,7 +1424,8 @@ input[type="checkbox"] + span{
   list-style-type: none;
   display: flex;
   flex-wrap: wrap;
-  margin-left: 900px;
+  margin-left: 961px;
+  margin-top: 11px;
 }
 
 .pagination-link {
@@ -1420,25 +1439,16 @@ input[type="checkbox"] + span{
   min-width: 179px;
   margin: 0 auto;
   font-size: 16px;
-  margin-top: -53px;
-  margin-left: 425px;
+  margin-top: -51px;
+  margin-left: 488px;
 }
 
 .product-card-button {
   text-decoration: none;
-  background-image:url(../images/pink_cart.svg);
-  background-repeat: no-repeat;
-  background-size: 32px 34px;
-  background-position-x: 20px;
-  background-position-y: -5px;
   display: block;
 }
 
-.product-list {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-}
+
 
 /*modal-container*/
 
@@ -1615,8 +1625,7 @@ input[type="checkbox"] + span{
   margin-right: 17px;
 }
 
-
-.popover-close-button {
+ .popover-close-button {
   position: absolute;
   top: -40px;
   right: 0;
@@ -1730,14 +1739,14 @@ input[type="checkbox"] + span{
   right: 0;
   z-index: 1;
   box-sizing: border-box;
-  padding: 8px 16px;
+  padding-left: 16px;
   font-family: "Inter", sans-serif;
   color: rgba(45, 52, 64, 1);
   background-color:rgba(252, 252, 252, 1);
   box-shadow: 0 18px 40px rgba(79, 70, 60, 0.16);
   margin-top: 40px;
   border-radius:4px;
-  height: 188px;
+  height: 170px;
   display: none;
 }
 
