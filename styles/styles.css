@@ -67,7 +67,7 @@ body {
 
 .navigation-catalog{
   margin-right: 7px;
-  margin-top: 5px;
+  margin-top: 9px;
 }
 
 .navigation-logo {
@@ -85,16 +85,21 @@ body {
 
 .navigation-search {
   margin-left: 67px;
+  margin-top: -7px;
 }
 
 .navigation-tel {
   display: flex;
-  margin-top: -8px;
+  margin-top: -5px;
 }
 
 .navigation-cart{
-  margin-left: -8px;
-  margin-top: -3px;
+  margin-left: -9px;
+  margin-top: -4px;
+}
+
+.navigation-entrance{
+  margin-top: -4px;
 }
 
 .navigation-link:hover {
@@ -151,6 +156,7 @@ body {
 
 .slider {
   margin-bottom: -68px;
+  margin-top: 3px;
 }
 
 .content-slider {
@@ -313,7 +319,7 @@ body {
   justify-content: space-between;
   flex-wrap: wrap;
   position: absolute;
-  width: 1186px;
+  width: 1149px;
   top: 620px;
   margin: 0 auto;
 }
@@ -558,7 +564,7 @@ margin-right: 98px;
 
 .advantages {
   background-color: #FFFFFF;
-  margin-bottom: 58px;
+  margin-bottom: 55px;
   padding-top: 28px;
   border-radius: 20px;
 }
@@ -701,8 +707,8 @@ margin-right: 98px;
   background-repeat:no-repeat;
   border-radius:20px;
   padding-left: 100px;
-  padding-bottom: 70px;
-  margin-top: 79px;
+  padding-bottom: 73px;
+  margin-top: 80px;
 }
 
 .appointment-header {
@@ -854,6 +860,7 @@ margin-right: 98px;
   background-size: 24px 24px;
   transition: 0.3s;
   border-radius: 50px;
+  margin-left: 16px;
 }
 
 .footer-social-telegram:hover {
@@ -908,7 +915,14 @@ margin-right: 98px;
 .footer-social-ul{
   list-style: none;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, auto);
+  padding: 0;
+  row-gap: 8px;
+}
+
+.footer-social-ul li {
+  padding-left: 24px;
+  position: relative;
 }
 
 .page-footer-container{
@@ -923,19 +937,31 @@ margin-right: 98px;
   width: 104px;
 }
 
-.footer-social-logo {
-  margin-top: 17px;
-  margin-right: 18px;
+.footer-social-main{
+  margin-left: -18px;
 }
 
-.footer-social-item {
-  margin-right: 13px;
-  margin-bottom: 7px;
+.footer-social-logo {
+  margin-top: 16px;
+  margin-right: 26px;
+}
+
+.footer-social-item-for-suppliers::before {
+  content:"";
+  position: absolute;
+  left: 52px;
+  top: 2px;
+  width: 16px;
+  height: 16px;
+  background-image: url(../images/heart.svg);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .footer-social-list {
   list-style: none;
   display: flex;
+  margin-right: -30px;
 }
 
 .footer-social-link {
@@ -948,7 +974,8 @@ margin-right: 98px;
 }
 
 .footer-about{
-  margin-left: 44px;
+  margin-left: 55px;
+  margin-top: -2px;
 }
 
 .footer-documents {
@@ -964,12 +991,6 @@ margin-right: 98px;
   text-decoration: underline;
 }
 
-.footer-social-for-suppliers {
-  background-image: url("../images/heart.svg");
-  background-repeat: no-repeat;
-  background-position: 61px 21px;
-  background-size: 16px 16px;
-}
 
 .footer-social-link-for-suppliers {
   font-size: 14px;
@@ -997,7 +1018,7 @@ margin-right: 98px;
 /*inner-header*/
 
 .main-inner {
-  padding-top: 32px;
+  padding-top: 37px;
   padding-left: 98px;
   padding-right: 98px;
   margin-bottom: 71px;
@@ -1623,6 +1644,7 @@ input[type="checkbox"] + span{
   background: rgba(252, 252, 252, 0.30);
   border-radius: 20px;
   margin-right: 17px;
+  display: block;
 }
 
  .popover-close-button {
