@@ -853,6 +853,10 @@ margin-right: 98px;
 
 /*page-footer*/
 
+.page-footer {
+  margin-top: 5px;
+}
+
 .button-link {
   display: inline-flex;
   background-repeat: no-repeat;
@@ -927,7 +931,7 @@ margin-right: 98px;
 
 .page-footer-container{
   display: flex;
-  width: 1253px;
+  width: 1260px;
   margin: 0 auto;
   padding: 9px 57px;
   justify-content: space-between;
@@ -1053,6 +1057,13 @@ margin-right: 98px;
 }
 
 /*catalog-products*/
+
+.delimiter {
+    border-top: 1px solid rgba(252, 252, 252, 0.3);
+    width: 1170px;
+    margin: 0 auto;
+    margin-bottom: -47px;
+}
 
 .filter-container {
   margin-top: 18px;
@@ -1252,7 +1263,7 @@ input[type="checkbox"] + span{
 .catalog-products {
   display: flex;
   flex-direction: column;
-  margin-bottom: 32px;
+  margin-bottom: 79px;
   margin-top: 53px;
 }
 
@@ -1795,7 +1806,7 @@ input[type="checkbox"] + span{
 /*widget*/
 
 .widget {
-  padding: 0;
+  padding: 6px;
   background: white;
   font-family: "Inter", sans-serif;
   font-size: 14px;
