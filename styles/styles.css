@@ -1094,7 +1094,7 @@ body {
   border-top: 1px solid rgba(252, 252, 252, 0.3);
   width: 1170px;
   margin: 0 auto;
-  margin-bottom: -47px;
+  margin-bottom: -49px;
 }
 
 .filter-container {
@@ -1609,7 +1609,7 @@ input[type="checkbox"] + span:hover {
   display: flex;
   flex-wrap: wrap;
   margin-left: 961px;
-  margin-top: 11px;
+  margin-top: 16px;
 }
 
 .pagination-link {
@@ -1637,10 +1637,48 @@ input[type="checkbox"] + span:hover {
 }
 
 .product-card-button {
-  text-decoration: none;
-  display: block;
-  color: white;
-  margin-top: -4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 6px;
+  width: 32px;
+  height: 32px;
+  border: 2px solid #ff2f64;
+  box-shadow: none;
+  border-radius: 50px;
+  box-sizing: border-box;
+  background-color: #ff2f64;
+  color: #fcfcfc;
+}
+
+.product-card-button svg {
+  fill: currentColor;
+}
+
+.product-card-button:hover {
+  background-color: rgba(252, 252, 252, .3);
+  outline-color: #ff2f64;
+  color: #2d3440;
+}
+
+.product-card-button:focus {
+  background-color: #ff2f64;
+  border-color: #2d3440;
+  outline: transparent
+}
+
+.product-card-button:active {
+  background-color: #ffcbd8;
+  color: #2d3440;
+  outline: transparent
+}
+
+.product-card-button:disabled {
+  color: #565c66;
+  background-color: #b9b9b9;
+  outline: transparent;
+  border-color: #b9b9b9;
+  pointer-events: none
 }
 
 .product-card-svg:hover {
