@@ -11,7 +11,7 @@
   <body class="pink">
     <!-- класс blue и yellow меняет цвет фона всей страницы -->
     <header class="page-header">
-      <nav class="navigation">
+      <nav class="navigation-header">
         <a class="navigation-logo" href="index.html">
           <span class="visually-hidden"> Логотип </span>
           <img
@@ -27,8 +27,23 @@
             <a
               class="navigation-link navigation-link-catalog"
               href="catalog.html"
-              >Каталог</a
-            >
+              >Каталог
+              <svg
+                class="catalog-svg"
+                width="16"
+                height="17"
+                viewBox="0 0 16 17"
+                fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="currentColor"
+                  clip-rule="evenodd"
+                  d="M3.80799 7.05317C3.54764 6.79282 3.12553 6.79282 2.86518 7.05317C2.60483 7.31352 2.60483 7.73563 2.86518 7.99598L7.52553 12.6563C7.52759 12.6584 7.52967 12.6606 7.53177 12.6626C7.66246 12.7933 7.83392 12.8584 8.00521 12.8579C8.17518 12.8574 8.34498 12.7923 8.47466 12.6626C8.47675 12.6606 8.47881 12.6585 8.48087 12.6564L13.1412 7.99598C13.4016 7.73563 13.4016 7.31352 13.1412 7.05317C12.8809 6.79282 12.4588 6.79282 12.1984 7.05317L8.00321 11.2484L3.80799 7.05317Z"
+                  fill="currentColor"
+                />
+              </svg>
+            </a>
 
             <div class="popover-catalog">
               <div class="widget-wrappper">
@@ -61,7 +76,6 @@
             >
           </li>
         </ul>
-
         <ul class="navigation-list navigation-user">
           <li class="navigation-item navigation-tel">
             <a class="contacts-phone" href="tel:+78005558628"
@@ -1135,7 +1149,7 @@
                 placeholder="email@example.com"
               />
             </p>
-            <p class="field-group">
+            <p class="field-group-auth">
               <label class="visually-hidden" for="auth-password">Пароль</label>
               <input
                 class="auth-form-field field"
