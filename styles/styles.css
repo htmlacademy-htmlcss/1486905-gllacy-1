@@ -66,23 +66,23 @@ body {
 .page-header {
   color: #2D3440;
   margin: 0 auto;
+  width: 1170px;
 }
 
 .navigation {
   display: flex;
   align-items: center;
-  margin: 0 auto;
-  width: max-content;
-  margin-left: 44px;
   margin-top: 24px;
+}
+
+.logo {
+  display: block;
 }
 
 .navigation-header {
   display: flex;
   align-items: center;
-  margin: 0 auto;
-  width: max-content;
-  margin-top: 20px;
+  margin-top: 24px;
 }
 
 .search-link {
@@ -94,11 +94,6 @@ body {
 
 .navigation-tel {
   display: flex;
-}
-
-.navigation-ion:hover {
-
-  display: block;
 }
 
 .navigation-entrance {
@@ -116,6 +111,7 @@ body {
   color: rgba(252, 252, 252, 1);
   border-radius: 25px 25px 25px 25px;
   fill: rgba(252, 252, 252, 1);
+  display: block;
 }
 
 .navigation-link:focus {
@@ -142,6 +138,17 @@ body {
   position: relative;
 }
 
+.navigation-user .navigation-link {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  display: flex;
+  gap: 9px;
+  align-items: center;
+  padding: 6px 16px;
+}
+
 .navigation-link-catalog {
   display: flex;
   align-items: center;
@@ -157,6 +164,13 @@ body {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  margin: 0;
+  padding-left: 15px;
+}
+
+.navigation-user {
+  margin-left: auto;
+  gap: 15px;
 }
 
 
@@ -165,7 +179,7 @@ body {
 
 .slider {
   margin-bottom: -68px;
-  margin-top: 3px;
+  margin-top: 98px;
 }
 
 .content-slider {
@@ -387,9 +401,11 @@ body {
 
 .main-container {
   flex-grow: 1;
-  padding-top: 136px;
-  margin-left: 98px;
-  margin-right: 98px;
+  margin-top: 47px;
+}
+
+.main-inner {
+  margin-top: 42px;
 }
 
 .page-container {
@@ -660,7 +676,6 @@ body {
   font-family: "Inter", sans-serif;
   grid-column: 2;
   box-shadow: 0 0 0 4px rgba(255, 47, 100, 0.3);
-  min-width: 160px;
 }
 
 .newsletter-form {
@@ -729,21 +744,21 @@ body {
 }
 
 .appointment-p {
-  margin-bottom: 30px;
-  margin-top: 41px;
+  margin-bottom: 31px;
+  margin-top: 43px;
 }
 
 .appointment-form {
   display: grid;
-  grid-template-columns: 117px 136px 128px;
-  gap: 0 16px;
+  grid-template-columns: 117px 141px 128px;
+  gap: 19px 16px;
   line-height: 20px;
   font-weight: bold;
 }
 
 .delivery-button {
-  margin-top: 12px;
-  margin-left: -2px;
+  margin-top: 11px;
+  width: 153px;
 }
 
 .appointment-form-phone {
@@ -948,7 +963,7 @@ body {
   display: flex;
   width: 1260px;
   margin: 0 auto;
-  padding: 9px 57px;
+  padding: 9px 66px;
   justify-content: space-between;
 }
 
@@ -1035,19 +1050,11 @@ body {
 
 /*catalog*/
 /*inner-header*/
-
-.main-inner {
-  padding-top: 37px;
-  padding-right: 98px;
-  margin-bottom: 70px;
-}
-
 .inner-header-title {
   font-size: 32px;
   line-height: 46px;
-  font-weight: bold;
-  margin-top: 9px;
-  margin-left: 3px;
+  font-weight: 800;
+  margin: 0;
 }
 
 .breadcrumbs-link {
@@ -1076,7 +1083,6 @@ body {
   border-top: 1px solid rgba(252, 252, 252, 0.3);
   width: 1170px;
   margin: 0 auto;
-  margin-bottom: -49px;
 }
 
 .filter-container {
@@ -1377,8 +1383,8 @@ input[type="checkbox"] + span:hover {
 .catalog-products {
   display: flex;
   flex-direction: column;
-  margin-bottom: 79px;
-  margin-top: 53px;
+  margin-bottom: 103px;
+  margin-top: 54px;
 }
 
 .catalog-filter-row {
@@ -1852,7 +1858,6 @@ input[type="checkbox"] + span:hover {
 .navigation-icon {
   background-color: rgba(252, 252, 252, 0.30);
   border-radius: 20px;
-  margin-right: 17px;
   display: block;
   color: rgba(45, 52, 64, 1);
 }
