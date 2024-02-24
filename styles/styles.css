@@ -897,6 +897,13 @@ body {
   margin-left: 16px;
 }
 
+.footer-social {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-left: 25px;
+}
+
 .footer-social-telegram:hover {
   box-shadow: 0 0 0 2px rgba(252, 252, 252, 0.5);
   fill: rgba(45, 52, 64, 1);
@@ -912,8 +919,6 @@ body {
 
 }
 
-
-
 .footer-social-vk:hover {
   box-shadow: 0 0 0 2px rgba(252, 252, 252, 0.5);
   fill: rgba(45, 52, 64, 1);
@@ -927,8 +932,6 @@ body {
   background-color: rgba(45, 52, 64, 1);
   box-shadow: 0 0 0 2px rgba(45, 52, 64, 1);
 }
-
-
 
 .footer-social-youtube:hover {
   box-shadow: 0 0 0 2px rgba(252, 252, 252, 0.5);
@@ -944,7 +947,10 @@ body {
   box-shadow: 0 0 0 2px rgba(45, 52, 64, 1);
 }
 
-
+.footer-social-for-suppliers {
+  margin-top: 10px;
+  margin-right: 64px;
+}
 
 .footer-social-ul {
   list-style: none;
@@ -963,21 +969,14 @@ body {
   display: flex;
   width: 1260px;
   margin: 0 auto;
-  padding: 9px 66px;
   justify-content: space-between;
 }
 
-.footer-social {
-  width: 104px;
-}
 
-.footer-social-main {
-  margin-left: -18px;
-}
 
 .footer-social-logo {
-  margin-top: 16px;
-  margin-right: 26px;
+  margin-top: 27px;
+  margin-right: 45px;
 }
 
 .footer-social-item-for-suppliers::before {
@@ -995,7 +994,8 @@ body {
 .footer-social-list {
   list-style: none;
   display: flex;
-  margin-right: -30px;
+  padding: 0;
+  margin: 0;
 }
 
 .footer-social-link {
@@ -1009,20 +1009,12 @@ body {
 
 .footer-about {
   margin-left: 55px;
-  margin-top: -2px;
-}
-
-.footer-documents {
-  margin-left: -4px;
-  margin-top: 3px;
-}
-
-.footer-standarts {
-  margin-left: -5px;
 }
 
 .footer-social-link-academy {
   text-decoration: underline;
+  font-size: 12px;
+  line-height: 16px;
 }
 
 
@@ -1040,8 +1032,6 @@ body {
   font-size: 12px;
   line-height: 16px;
   font-weight: normal;
-  margin-top: 7px;
-  margin-left: 7px;
 }
 
 
