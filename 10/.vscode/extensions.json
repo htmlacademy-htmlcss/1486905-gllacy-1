@@ -1,5 +1,3 @@
 {
-  "recommendations": [
-    "EditorConfig.EditorConfig"
-  ]
+  "recommendations": ["EditorConfig.EditorConfig", "ft.devtools-test"]
 }
