@@ -243,9 +243,8 @@ body {
 }
 
 .button-slider {
-  margin-top: 31px;
+  margin-top: 47px;
   font-size: 16px;
-  margin-left: 2px;
 }
 
 .img-slider {
@@ -330,7 +329,9 @@ body {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  margin-left: -40px;
+  margin: 0;
+  padding: 0;
+  padding-top: 15px;
 }
 
 .slider-pagination-item {
@@ -342,7 +343,7 @@ body {
   justify-content: space-between;
   flex-wrap: wrap;
   position: absolute;
-  width: 1149px;
+  width: 1170px;
   top: 620px;
   margin: 0 auto;
 }
@@ -425,7 +426,8 @@ body {
 .p-slider {
   font-size: 18px;
   line-height: 24px;
-  margin-top: -5px;
+  margin: 0;
+  padding-top: 26px;
 }
 
 .button:hover {
@@ -538,13 +540,13 @@ body {
 .product-card {
   background-color: #FCFCFC;
   justify-content: center;
-  padding-bottom: 21px;
+  padding-bottom: 24px;
   border-radius: 8px;
 }
 
 .product-card-image {
   display: block;
-  margin-top: -50px;
+  margin-top: -48px;
   margin-bottom: -20px;
 }
 
@@ -581,7 +583,7 @@ body {
 .advantages {
   background-color: #FFFFFF;
   margin-bottom: 55px;
-  padding-top: 28px;
+  padding-top: 30px;
   border-radius: 20px;
 }
 
@@ -632,6 +634,7 @@ body {
   font-size: 24px;
   font-weight: 700;
   padding-left: 32px;
+  margin: 0;
 }
 
 .newsletter-div {
@@ -650,7 +653,8 @@ body {
   line-height: 20px;
   margin: 0;
   padding-left: 32px;
-  padding-top: 28px;
+  padding-top: 35px;
+  padding-bottom: 14px;
 }
 
 .newsletter-button:hover {
@@ -676,6 +680,7 @@ body {
   font-family: "Inter", sans-serif;
   grid-column: 2;
   box-shadow: 0 0 0 4px rgba(255, 47, 100, 0.3);
+  margin: 0;
 }
 
 .newsletter-form {
@@ -698,7 +703,7 @@ body {
 }
 
 .newsletter-container-two {
-  margin-right: 14px;
+  margin-right: 20px;
 }
 
 .field {
@@ -711,6 +716,8 @@ body {
   border-radius: 4px;
   border: 1px solid rgba(185, 185, 185, 1);
   background: rgba(255, 255, 255, 1);
+  font-weight: 500;
+  font-family: "Inter", sans-serif;
 }
 
 /*appointment*/
@@ -731,7 +738,7 @@ body {
 .appointment-header {
   text-align: left;
   margin-bottom: 24px;
-  margin-top: 164px;
+  margin-top: 166px;
 }
 
 .appointment-container {
@@ -823,7 +830,7 @@ body {
 /*contacts*/
 
 .contacts {
-  margin-bottom: 24px;
+  margin-bottom: 49px;
   background-image: url(../images/feedback.jpg);
   background-repeat: no-repeat;
   padding: 64px;
@@ -848,24 +855,28 @@ body {
   line-height: 24px;
   font-weight: bold;
   font-style: normal;
-  margin-bottom: 32px;
+  padding-bottom: 32px;
 }
 
 .contacts-p {
-  margin-top: -3px;
+  margin: 0;
+  padding-bottom: 7px;
 }
 
 .contacts-hours {
   font-size: 14px;
   line-height: 22px;
   font-weight: normal;
-  margin-top: -2px;
+  margin: 0;
 }
 
 .contacts-description {
   font-size: 16px;
   line-height: 22px;
   font-weight: normal;
+  margin: 0;
+  padding-bottom: 11px;
+  padding-top: 17px;
 }
 
 .contacts-button {
@@ -894,14 +905,13 @@ body {
   background-size: 24px 24px;
   transition: 0.3s;
   border-radius: 50px;
-  margin-left: 16px;
 }
 
 .footer-social {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  margin-left: 25px;
+  margin-left: 0;
 }
 
 .footer-social-telegram:hover {
@@ -948,16 +958,18 @@ body {
 }
 
 .footer-social-for-suppliers {
-  margin-top: 10px;
-  margin-right: 64px;
+  margin-top: 0;
+  margin-right: 0;
 }
 
 .footer-social-ul {
   list-style: none;
   display: grid;
   grid-template-columns: repeat(2, auto);
-  padding: 0;
-  row-gap: 8px;
+  padding-top: 2px;
+  padding-right: 43px;
+  row-gap: 9px;
+  margin: 0;
 }
 
 .footer-social-ul li {
@@ -967,7 +979,8 @@ body {
 
 .page-footer-container {
   display: flex;
-  width: 1260px;
+  width: 1170px;
+  align-items: flex-start;
   margin: 0 auto;
   justify-content: space-between;
 }
@@ -975,20 +988,8 @@ body {
 
 
 .footer-social-logo {
-  margin-top: 27px;
-  margin-right: 45px;
-}
-
-.footer-social-item-for-suppliers::before {
-  content: "";
-  position: absolute;
-  left: 52px;
-  top: 2px;
-  width: 16px;
-  height: 16px;
-  background-image: url(../images/heart.svg);
-  background-repeat: no-repeat;
-  background-position: center;
+  margin: 0;
+  padding-top: 3px;
 }
 
 .footer-social-list {
@@ -996,6 +997,31 @@ body {
   display: flex;
   padding: 0;
   margin: 0;
+  gap: 11px;
+}
+
+.pagination-social-list {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+  gap: 11px;
+  padding-top: 12px;
+}
+
+.footer-nav-item a {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  display: block;
+  text-decoration: none;
+  color: #2D3440;
+}
+
+.footer-social-ul li {
+  padding-left: 24px;
+  position: relative;
 }
 
 .footer-social-link {
@@ -1004,11 +1030,16 @@ body {
   font-weight: normal;
   color: #2D3440;
   text-decoration: none;
-  margin-right: 6px;
 }
 
-.footer-about {
-  margin-left: 55px;
+.footer-nav-item-like {
+  background-image: url(../images/heart.svg);
+  background-repeat: no-repeat;
+  background-position: left;
+}
+
+.footer-nav-item-like a {
+  font-weight: 600;
 }
 
 .footer-social-link-academy {
@@ -1022,21 +1053,16 @@ body {
   font-size: 14px;
   line-height: 20px;
   font-weight: bold;
-  color: #2D3440;
-  text-decoration: none;
-  margin-left: 53px;
 }
 
 
 .page-footer-title {
   font-size: 12px;
   line-height: 16px;
-  font-weight: normal;
+  font-weight: 500;
+  margin: 0;
+  padding-top: 7px;
 }
-
-
-
-
 
 /*catalog*/
 /*inner-header*/
@@ -1373,7 +1399,7 @@ input[type="checkbox"] + span:hover {
 .catalog-products {
   display: flex;
   flex-direction: column;
-  margin-bottom: 103px;
+  margin-bottom: 126px;
   margin-top: 54px;
 }
 
@@ -1407,7 +1433,7 @@ input[type="checkbox"] + span:hover {
 }
 
 .catalog-container {
-  margin-top: -10px;
+  margin-top: -12px;
   margin-bottom: 53px;
 }
 
@@ -1568,9 +1594,11 @@ input[type="checkbox"] + span:hover {
 
 .product-card-price-div {
   display: flex;
-  justify-content: space-around;
-  margin-top: 20px;
-  margin-left: 3px;
+  justify-content: space-between;
+  margin-top: 16px;
+  gap: 10px;
+  align-items: center;
+  padding: 0 40px;
 }
 
 .h-slider {
@@ -1578,7 +1606,8 @@ input[type="checkbox"] + span:hover {
   line-height: 46px;
   font-size: 36px;
   font-weight: 900;
-  margin-top: 16px;
+  margin: 0;
+  padding-top: 16px;
 }
 
 .pagination {
