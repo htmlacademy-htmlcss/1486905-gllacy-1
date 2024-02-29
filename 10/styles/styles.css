@@ -1444,19 +1444,18 @@ input[type="checkbox"] + span:hover {
 }
 
 .catalog-filter-list-fat {
-  min-width: 382px;
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
   margin-left: 12px;
   font-family: "Inter", sans-serif;
   font-size: 14px;
   line-height: 20px;
   background-color: rgba(252, 252, 252, 0.3);
   border-radius: 25px 25px 25px 25px;
-  padding: 9px 26px;
-  justify-content: space-between;
+  padding: 9px 46px;
   box-sizing: border-box;
-  min-height: 36px;
 }
 
 .catalog-filter-list-fat:hover {
@@ -1474,7 +1473,6 @@ input[type="checkbox"] + span:hover {
   list-style: none;
   margin: 0;
   padding: 0;
-  display: flex;
 }
 
 .catalog-filter-list:hover {
@@ -1506,9 +1504,6 @@ input[type="checkbox"] + span:hover {
 .catalog-filter-item {
   font-size: 14px;
   line-height: 20px;
-  padding-right: 32px;
-  padding-left: 9px;
-  padding-top: 2px;
 }
 
 .catalog-filter-item-last {
@@ -1535,12 +1530,14 @@ input[type="checkbox"] + span:hover {
   background-color: rgba(252, 252, 252, 0.3);
   border-radius: 25px 25px 25px 25px;
   padding: 12px 47px;
-  display: flex;
   justify-content: space-between;
   box-sizing: border-box;
   min-height: 40px;
   margin-top: 10px;
   margin-left: 3px;
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
 }
 
 .sorting-decor {
