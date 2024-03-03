@@ -1105,13 +1105,15 @@ body {
   margin-top: 18px;
 }
 
+
+
 input[type="radio"] {
   display: none;
 }
 
 .control-radio[type="radio"]:checked + span {
   position: absolute;
-  left: -22px;
+  left: 0;
   top: 0;
   width: 100%;
   height: 100%;
@@ -1122,7 +1124,7 @@ input[type="radio"] {
 
 .control-radio[type="radio"]:checked + span:hover {
   position: absolute;
-  left: -22px;
+  left: 0;
   top: 0;
   width: 100%;
   height: 100%;
@@ -1134,7 +1136,7 @@ input[type="radio"] {
 
 .control-radio[type="radio"]:checked + span:disabled {
   position: absolute;
-  left: -22px;
+  left: 0;
   top: 0;
   width: 100%;
   height: 100%;
@@ -1145,7 +1147,7 @@ input[type="radio"] {
 
 .control-radio[type="radio"] + span {
   position: absolute;
-  left: -22px;
+  left: 0;
   top: 0;
   width: 100%;
   height: 100%;
@@ -1156,7 +1158,7 @@ input[type="radio"] {
 
 .control-radio[type="radio"] + span:hover {
   position: absolute;
-  left: -22px;
+  left: 0;
   top: 0;
   width: 100%;
   height: 100%;
@@ -1168,12 +1170,13 @@ input[type="radio"] {
 label.control {
   display: block;
   position: relative;
+  padding-left: 24px;
 }
 
 
 .control-input[type="checkbox"]:checked + span {
   position: absolute;
-  left: -22px;
+  left: 0;
   top: 0;
   width: 100%;
   height: 100%;
@@ -1184,7 +1187,7 @@ label.control {
 
 .control-input[type="checkbox"]:checked + span:hover {
   position: absolute;
-  left: -22px;
+  left: 0;
   top: 0;
   width: 100%;
   height: 100%;
@@ -1195,7 +1198,7 @@ label.control {
 
 .control-input[type="checkbox"]:checked + span:disabled {
   position: absolute;
-  left: -22px;
+  left: 0;
   top: 0;
   width: 100%;
   height: 100%;
@@ -1206,7 +1209,7 @@ label.control {
 
 input[type="checkbox"] + span {
   position: absolute;
-  left: -22px;
+  left: 0;
   top: 0;
   width: 100%;
   height: 100%;
@@ -1217,7 +1220,7 @@ input[type="checkbox"] + span {
 
 input[type="checkbox"] + span:disabled {
   position: absolute;
-  left: -22px;
+  left: 0;
   top: 0;
   width: 100%;
   height: 100%;
@@ -1228,7 +1231,7 @@ input[type="checkbox"] + span:disabled {
 
 input[type="checkbox"] + span:hover {
   position: absolute;
-  left: -22px;
+  left: 0;
   top: 0;
   width: 100%;
   height: 100%;
@@ -1433,7 +1436,7 @@ input[type="checkbox"] + span:hover {
 }
 
 .catalog-container {
-  margin-top: -12px;
+  margin-top: -16px;
   margin-bottom: 53px;
 }
 
@@ -1447,15 +1450,17 @@ input[type="checkbox"] + span:hover {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  gap: 40px;
+  gap: 16px;
   margin-left: 12px;
   font-family: "Inter", sans-serif;
   font-size: 14px;
   line-height: 20px;
   background-color: rgba(252, 252, 252, 0.3);
-  border-radius: 25px 25px 25px 25px;
-  padding: 9px 46px;
+  border-radius: 18px;
+  padding: 9px 24px;
   box-sizing: border-box;
+  max-width: 383px;
+  width: 100%;
 }
 
 .catalog-filter-list-fat:hover {
@@ -1469,10 +1474,12 @@ input[type="checkbox"] + span:hover {
 }
 
 .catalog-filter-list {
-  min-width: 606px;
+  min-width: 604px;
+  width: 100%;
+  border-radius: 18px;
+  padding: 9px 24px;
   list-style: none;
   margin: 0;
-  padding: 0;
 }
 
 .catalog-filter-list:hover {
@@ -1497,7 +1504,7 @@ input[type="checkbox"] + span:hover {
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
-  margin-bottom: -3px;
+  margin-bottom: 0;
   margin-left: 15px;
 }
 
@@ -1528,15 +1535,12 @@ input[type="checkbox"] + span:hover {
   font-size: 14px;
   line-height: 20px;
   background-color: rgba(252, 252, 252, 0.3);
-  border-radius: 25px 25px 25px 25px;
-  padding: 12px 47px;
-  justify-content: space-between;
   box-sizing: border-box;
   min-height: 40px;
   margin-top: 10px;
   margin-left: 3px;
   display: flex;
-  gap: 40px;
+  gap: 16px;
   flex-wrap: wrap;
 }
 
