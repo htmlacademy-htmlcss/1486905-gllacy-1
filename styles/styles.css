@@ -406,7 +406,7 @@ body {
 }
 
 .main-inner {
-  margin-top: 42px;
+  margin-top: 45px;
 }
 
 .page-container {
@@ -493,7 +493,7 @@ body {
   font-size: 32px;
   line-height: 46px;
   text-align: center;
-  margin-bottom: 56px;
+  margin-bottom: 55px;
   font-weight: 900;
 }
 
@@ -582,7 +582,7 @@ body {
 
 .advantages {
   background-color: #FFFFFF;
-  margin-bottom: 55px;
+  margin-bottom: 56px;
   padding-top: 30px;
   border-radius: 20px;
 }
@@ -830,7 +830,6 @@ body {
 /*contacts*/
 
 .contacts {
-  margin-bottom: 49px;
   background-image: url(../images/feedback.jpg);
   background-repeat: no-repeat;
   padding: 64px;
@@ -843,7 +842,7 @@ body {
 .contacts-container {
   background-color: #FCFCFC;
   width: 295px;
-  padding-top: 27px;
+  padding-top: 24px;
   padding-left: 41px;
   padding-right: 7px;
   padding-bottom: 16px;
@@ -860,7 +859,7 @@ body {
 
 .contacts-p {
   margin: 0;
-  padding-bottom: 7px;
+  padding-bottom: 6px;
 }
 
 .contacts-hours {
@@ -875,7 +874,7 @@ body {
   line-height: 22px;
   font-weight: normal;
   margin: 0;
-  padding-bottom: 11px;
+  padding-bottom: 13px;
   padding-top: 17px;
 }
 
@@ -983,6 +982,8 @@ body {
   align-items: flex-start;
   margin: 0 auto;
   justify-content: space-between;
+  padding-bottom: 48px;
+  padding-top: 45px;
 }
 
 
@@ -1094,18 +1095,9 @@ body {
 }
 
 /*catalog-products*/
-
-.delimiter {
-  border-top: 1px solid rgba(252, 252, 252, 0.3);
-  width: 1170px;
-  margin: 0 auto;
-}
-
 .filter-container {
   margin-top: 18px;
 }
-
-
 
 input[type="radio"] {
   display: none;
@@ -1387,7 +1379,7 @@ input[type="checkbox"] + span:hover {
   display: flex;
   padding: 0;
   list-style-type: none;
-  margin-top: 13px;
+  margin-top: 11px;
 }
 
 .breadcrumbs-item {
@@ -1402,8 +1394,9 @@ input[type="checkbox"] + span:hover {
 .catalog-products {
   display: flex;
   flex-direction: column;
-  margin-bottom: 126px;
   margin-top: 54px;
+  border-bottom: 1px solid rgba(252, 252, 252, 0.3);
+  padding-bottom: 76px;
 }
 
 .catalog-filter-row {
@@ -1524,8 +1517,7 @@ input[type="checkbox"] + span:hover {
   font-weight: bold;
   background-color: rgba(252, 252, 252, 0.3);
   box-shadow: 0 0 0 2px rgba(252, 252, 252, 1);
-  height: 36px;
-  padding: 10px 32px;
+  padding: 8px 32px;
   width: 185px;
   margin-left: -10px;
 }
@@ -1550,7 +1542,7 @@ input[type="checkbox"] + span:hover {
   line-height: 20px;
   background-color: rgba(252, 252, 252, 0.3);
   border-radius: 25px 25px 25px 25px;
-  padding: 8px 14px;
+  padding: 8px 18px;
   display: flex;
   justify-content: space-between;
   box-sizing: border-box;
@@ -1558,6 +1550,11 @@ input[type="checkbox"] + span:hover {
   width: 196px;
   border-width: 0;
   margin-right: 11px;
+  appearance: none;
+  background-image: url(../images/arrow-down.svg);
+  background-repeat: no-repeat;
+  background-position-x: 169px;
+  background-position-y: 8px;
 }
 
 .sorting-decor:hover {
@@ -1848,7 +1845,7 @@ input[type="checkbox"] + span:hover {
 .popover-search {
   position: absolute;
   top: 100%;
-  right: 25px;
+  right: 0;
   z-index: 1;
   display: none;
   padding-top: 10px;
@@ -1979,6 +1976,8 @@ input[type="checkbox"] + span:hover {
   font-size: 24px;
   line-height: 30px;
   color: rgba(45, 52, 64, 1);
+  padding-left: 9px;
+  margin: 0;
 }
 
 .popovet-title-nocart {
