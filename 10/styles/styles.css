@@ -406,7 +406,7 @@ body {
 }
 
 .main-inner {
-  margin-top: 42px;
+  margin-top: 45px;
 }
 
 .page-container {
@@ -493,7 +493,7 @@ body {
   font-size: 32px;
   line-height: 46px;
   text-align: center;
-  margin-bottom: 56px;
+  margin-bottom: 55px;
   font-weight: 900;
 }
 
@@ -582,7 +582,7 @@ body {
 
 .advantages {
   background-color: #FFFFFF;
-  margin-bottom: 55px;
+  margin-bottom: 56px;
   padding-top: 30px;
   border-radius: 20px;
 }
@@ -710,8 +710,8 @@ body {
   font-size: 16px;
   line-height: 20px;
   color: #B9B9B9;
-  padding-left: 16px;
-  padding-top: 14px;
+  padding-left: 14px;
+  padding-top: 12px;
   padding-bottom: 14px;
   border-radius: 4px;
   border: 1px solid rgba(185, 185, 185, 1);
@@ -830,7 +830,6 @@ body {
 /*contacts*/
 
 .contacts {
-  margin-bottom: 49px;
   background-image: url(../images/feedback.jpg);
   background-repeat: no-repeat;
   padding: 64px;
@@ -843,7 +842,7 @@ body {
 .contacts-container {
   background-color: #FCFCFC;
   width: 295px;
-  padding-top: 27px;
+  padding-top: 24px;
   padding-left: 41px;
   padding-right: 7px;
   padding-bottom: 16px;
@@ -860,7 +859,7 @@ body {
 
 .contacts-p {
   margin: 0;
-  padding-bottom: 7px;
+  padding-bottom: 6px;
 }
 
 .contacts-hours {
@@ -875,7 +874,7 @@ body {
   line-height: 22px;
   font-weight: normal;
   margin: 0;
-  padding-bottom: 11px;
+  padding-bottom: 13px;
   padding-top: 17px;
 }
 
@@ -983,6 +982,8 @@ body {
   align-items: flex-start;
   margin: 0 auto;
   justify-content: space-between;
+  padding-bottom: 48px;
+  padding-top: 45px;
 }
 
 
@@ -1094,18 +1095,9 @@ body {
 }
 
 /*catalog-products*/
-
-.delimiter {
-  border-top: 1px solid rgba(252, 252, 252, 0.3);
-  width: 1170px;
-  margin: 0 auto;
-}
-
 .filter-container {
   margin-top: 18px;
 }
-
-
 
 input[type="radio"] {
   display: none;
@@ -1387,7 +1379,7 @@ input[type="checkbox"] + span:hover {
   display: flex;
   padding: 0;
   list-style-type: none;
-  margin-top: 13px;
+  margin-top: 11px;
 }
 
 .breadcrumbs-item {
@@ -1402,8 +1394,9 @@ input[type="checkbox"] + span:hover {
 .catalog-products {
   display: flex;
   flex-direction: column;
-  margin-bottom: 126px;
   margin-top: 54px;
+  border-bottom: 1px solid rgba(252, 252, 252, 0.3);
+  padding-bottom: 76px;
 }
 
 .catalog-filter-row {
@@ -1524,8 +1517,7 @@ input[type="checkbox"] + span:hover {
   font-weight: bold;
   background-color: rgba(252, 252, 252, 0.3);
   box-shadow: 0 0 0 2px rgba(252, 252, 252, 1);
-  height: 36px;
-  padding: 10px 32px;
+  padding: 8px 32px;
   width: 185px;
   margin-left: -10px;
 }
@@ -1550,7 +1542,7 @@ input[type="checkbox"] + span:hover {
   line-height: 20px;
   background-color: rgba(252, 252, 252, 0.3);
   border-radius: 25px 25px 25px 25px;
-  padding: 8px 14px;
+  padding: 8px 18px;
   display: flex;
   justify-content: space-between;
   box-sizing: border-box;
@@ -1558,6 +1550,11 @@ input[type="checkbox"] + span:hover {
   width: 196px;
   border-width: 0;
   margin-right: 11px;
+  appearance: none;
+  background-image: url(../images/arrow-down.svg);
+  background-repeat: no-repeat;
+  background-position-x: 169px;
+  background-position-y: 8px;
 }
 
 .sorting-decor:hover {
@@ -1771,6 +1768,12 @@ input[type="checkbox"] + span:hover {
   color: rgba(45, 52, 64, 1);
 }
 
+.btn-links {
+  line-height: 20px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
 .field-group-auth {
   margin-bottom: 16px;
   font-family: "Inter", sans-serif;
@@ -1832,7 +1835,7 @@ input[type="checkbox"] + span:hover {
   top: 0;
   right: 0;
   z-index: 1;
-  width: 288px;
+  min-width: 290px;
   box-sizing: border-box;
   padding: 48px 0;
   font-family: "Inter", sans-serif;
@@ -1840,7 +1843,8 @@ input[type="checkbox"] + span:hover {
   background-color: rgba(252, 252, 252, 1);
   min-height: 156px;
   box-shadow: 0 18px 40px rgba(79, 70, 60, 0.16);
-  margin-top: 40px;
+  margin-top: 41px;
+  margin-right: 2px;
   border-radius: 4px;
   display: none;
 }
@@ -1848,7 +1852,7 @@ input[type="checkbox"] + span:hover {
 .popover-search {
   position: absolute;
   top: 100%;
-  right: 25px;
+  right: 0;
   z-index: 1;
   display: none;
   padding-top: 10px;
@@ -1903,18 +1907,15 @@ input[type="checkbox"] + span:hover {
 
 .popover-close-button {
   position: absolute;
-  top: -40px;
-  right: 0;
-  min-width: 115px;
-  height: 32px;
+  top: -41px;
+  right: -1px;
   background-color: rgba(255, 74, 120, 1);
   box-shadow: none;
   color: rgba(252, 252, 252, 1);
   font-family: "Inter", sans-serif;
   font-size: 14px;
   font-weight: 400;
-  padding-top: 6px;
-  padding-right: 16px;
+  padding: 4px 16px;
 }
 
 .popover-cart .popover-close-button {
@@ -1935,7 +1936,7 @@ input[type="checkbox"] + span:hover {
   top: 100%;
   padding-top: 10px;
   position: absolute;
-  right: 10px;
+  right: 53px;
   z-index: 1;
 }
 
@@ -1950,7 +1951,7 @@ input[type="checkbox"] + span:hover {
 
 .row {
   display: flex;
-  gap: 20px;
+  gap: 23px;
   align-items: center;
 }
 
@@ -1959,12 +1960,12 @@ input[type="checkbox"] + span:hover {
   right: 0;
   z-index: 1;
   box-sizing: border-box;
-  width: 441px;
+  width: 420px;
   padding: 48px;
   font-family: "Inter", sans-serif;
   color: rgba(45, 52, 64, 1);
   background-color: rgba(252, 252, 252, 1);
-  min-height: 382px;
+  max-height: 350px;
   box-shadow: 0 18px 40px rgba(79, 70, 60, 0.16);
   border-radius: 4px;
 }
@@ -1979,6 +1980,8 @@ input[type="checkbox"] + span:hover {
   font-size: 24px;
   line-height: 30px;
   color: rgba(45, 52, 64, 1);
+  padding-left: 9px;
+  margin: 0;
 }
 
 .popovet-title-nocart {
@@ -2052,14 +2055,13 @@ input[type="checkbox"] + span:hover {
 
 .popover-catalog {
   position: absolute;
-  right: 0;
   z-index: 1;
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
   color: rgba(45, 52, 64, 1);
   display: none;
   top: 100%;
-  padding-top: 10px;
+  padding-top: 8px;
 }
 
 .popover-close-catalog {
@@ -2085,9 +2087,8 @@ input[type="checkbox"] + span:hover {
 /*widget*/
 
 .widget {
-  width: 125px;
   top: 100%;
-  padding-top: 10px;
+  padding-top: 1px;
 }
 
 .widget-wrappper {
@@ -2098,12 +2099,16 @@ input[type="checkbox"] + span:hover {
   padding-left: 16px;
   background-color: rgba(252, 252, 252, 1);
   box-shadow: 0 18px 40px rgba(79, 70, 60, 0.16);
-  height: 170px;
+  min-height: 187px;
+  min-width: 138px;
   border-radius: 4px;
 }
 
 .widget-title {
-  margin-bottom: 8px;
+  margin-bottom: 15px;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 600;
 }
 
 .widget-list {
@@ -2113,7 +2118,7 @@ input[type="checkbox"] + span:hover {
 }
 
 .widget-i {
-  margin-bottom: 6px;
+  margin-bottom: 12px;
 }
 
 .widget-link {
@@ -2126,6 +2131,7 @@ input[type="checkbox"] + span:hover {
 }
 
 .widget-title + .widget-list {
+  margin-right: 12px;
   border-top: 1px solid rgba(231, 231, 231, 1);
 }
 
