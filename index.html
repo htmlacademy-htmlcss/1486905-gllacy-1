@@ -133,11 +133,11 @@
               Вход
             </a>
             <div class="popover popover-auth">
-              <div class="popover-cart-wrapper">
+              <div class="popover-auth-wrapper">
                 <section class="modal-content">
-                  <h2 class="modal-title">Личный кабинет</h2>
+                  <h2 class="modal-title-auth">Личный кабинет</h2>
                   <form
-                    class="auth-form"
+                    class="auth-form-auth"
                     action="https://echo.htmlacademy.ru/"
                     method="post"
                   >
@@ -202,7 +202,7 @@
               </svg>
               2 товара
             </a>
-            <div class="popover popover-cart">
+            <div class="popover-cart">
               <div class="popover-cart-wrapper">
                 <div class="popover-content">
                   <h2 class="popover-title">Корзина</h2>
@@ -216,12 +216,12 @@
                         alt="Малинка"
                       />
                       <p class="cart-item-title">
-                        Малинка<br /><span class="cart-item-br"
-                          >1 кг х 310 ₽</span
-                        >
+                        Малинка
+                        <br />
+                        <span class="cart-item-br">1 кг х 310 ₽</span>
                       </p>
                       <p class="cart-item-price">310 ₽</p>
-                      <button type="button" class="cart-item-button button">
+                      <button type="button" class="cart-item-button">
                         <svg
                           width="16"
                           height="16"
@@ -241,7 +241,7 @@
                       </button>
                     </li>
 
-                    <li class="cart-item cart-item-lastelement">
+                    <li class="cart-item">
                       <img
                         class="cart-img"
                         src="images/cart-bublgam.png"
@@ -250,12 +250,11 @@
                         alt="Баблгам"
                       />
                       <p class="cart-item-title">
-                        Бабл-гам<br /><span class="cart-item-br"
-                          >1,5 кг х 320 ₽</span
-                        >
+                        Бабл-гам<br />
+                        <span class="cart-item-br">1,5 кг х 320 ₽</span>
                       </p>
                       <p class="cart-item-price">480 ₽</p>
-                      <button type="button" class="cart-item-button button">
+                      <button type="button" class="cart-item-button">
                         <svg
                           width="16"
                           height="16"
@@ -274,15 +273,15 @@
                         <span class="visually-hidden">Удалить из корзины</span>
                       </button>
                     </li>
-                    <li class="cart-item cart-item-last">
-                      <p class="cart-item-title cart-item-lasttitle">
-                        <button class="button newsletter-button" type="submit">
-                          Оформить заказ
-                        </button>
-                      </p>
-                      <p class="cart-item-price">Итого: 790 ₽</p>
-                    </li>
                   </ul>
+                  <div class="cart-total">
+                    <p class="cart-item-title cart-item-lasttitle">
+                      <button class="button newsletter-button" type="submit">
+                        Оформить заказ
+                      </button>
+                    </p>
+                    <p class="cart-item-price">Итого: 790 ₽</p>
+                  </div>
                 </div>
               </div>
             </div>
