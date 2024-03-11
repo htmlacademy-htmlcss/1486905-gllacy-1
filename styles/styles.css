@@ -691,6 +691,57 @@ body {
   margin: 15px 0 0 auto;
 }
 
+.contacts-button {
+  background-color: #FF2F64;
+  color: #FCFCFC;
+  line-height: 20px;
+  text-decoration: none;
+  padding-left: 34px;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: "Inter", sans-serif;
+  grid-column: 2;
+  box-shadow: 0 0 0 4px rgba(255, 47, 100, 0.3);
+  margin-bottom: 25px;
+}
+
+.contacts-button:hover {
+  background-color: rgba(252, 252, 252, 0.3);
+  color: rgba(45, 52, 64, 1);
+  box-shadow: 0 0 0 4px rgba(255, 47, 100, 1);
+}
+
+.contacts-button:focus {
+  background-color: rgba(254, 175, 195, 1);
+  color: rgba(252, 252, 252, 1);
+  box-shadow: 0 0 0 1px rgba(45, 52, 64, 1);
+}
+
+.newsletter-button-for-sent {
+  background-color: #FF2F64;
+  color: #FCFCFC;
+  line-height: 20px;
+  text-decoration: none;
+  padding-left: 34px;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: "Inter", sans-serif;
+  grid-column: 2;
+  box-shadow: 0 0 0 4px rgba(255, 47, 100, 0.3);
+}
+
+.newsletter-button-for-sent:hover {
+  background-color: rgba(252, 252, 252, 0.3);
+  color: rgba(45, 52, 64, 1);
+  box-shadow: 0 0 0 4px rgba(255, 47, 100, 1);
+}
+
+.newsletter-button-for-sent:focus {
+  background-color: rgba(254, 175, 195, 1);
+  color: rgba(252, 252, 252, 1);
+  box-shadow: 0 0 0 1px rgba(45, 52, 64, 1);
+}
+
 .newsletter-form {
   background-color: #fff;
   display: flex;
@@ -746,7 +797,7 @@ body {
 .appointment-header {
   text-align: left;
   margin-bottom: 24px;
-  margin-top: 166px;
+  margin-top: 167px;
 }
 
 .appointment-container {
@@ -772,7 +823,7 @@ body {
 }
 
 .delivery-button {
-  margin-top: 11px;
+  margin-top: 15px;
   width: 153px;
 }
 
@@ -884,10 +935,6 @@ body {
   margin: 0;
   padding-bottom: 13px;
   padding-top: 17px;
-}
-
-.contacts-button {
-  margin-bottom: 25px;
 }
 
 .footer-contacts-address-phone {
