@@ -93,8 +93,8 @@ body {
   border-radius: 20px;
 }
 
-.navigation-tel {
-  display: flex;
+.contacts-phone {
+  display: block;
 }
 
 .navigation-entrance {
@@ -428,6 +428,7 @@ body {
   color: #2D3440;
   font-weight: bold;
   text-decoration: none;
+  display: block;
 }
 
 
@@ -522,7 +523,7 @@ body {
 .presents-list {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  column-gap: 30px;
+  gap: 30px;
   width: 1170px;
   margin-left: -41px;
 }
@@ -805,8 +806,8 @@ body {
   padding-left: 40px;
   padding-right: 40px;
   border-radius: 6px;
-  height: 406px;
   margin-top: 60px;
+  padding-bottom: 35px;
 }
 
 .appointment-p {
@@ -944,6 +945,7 @@ body {
   font-style: normal;
   color: #2D3440;
   text-decoration: none;
+  display: block;
 }
 
 /*page-footer*/
@@ -1060,15 +1062,19 @@ body {
   padding: 0;
   margin: 0;
   gap: 11px;
+  flex-wrap: wrap;
+  width: 106px;
 }
 
 .pagination-social-list {
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
   padding: 0;
   margin: 0;
   gap: 11px;
   padding-top: 12px;
+  width: 106px;
 }
 
 .footer-nav-item a {
@@ -1160,10 +1166,6 @@ body {
   margin-top: 18px;
 }
 
-input[type="radio"] {
-  display: none;
-}
-
 .control-radio[type="radio"]:checked + span {
   position: absolute;
   left: 0;
@@ -1198,6 +1200,21 @@ input[type="radio"] {
   background-image: url(../images/radio-disabled.svg);
 }
 
+.control-radio[type="radio"]:checked:focus + span {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  box-shadow: 0 0 0 2px #000;
+}
+
+input.control-radio:focus + span {
+  box-shadow: 0 0 0 2px #000;
+}
+
 .control-radio[type="radio"] + span {
   position: absolute;
   left: 0;
@@ -1218,6 +1235,18 @@ input[type="radio"] {
   background-repeat: no-repeat;
   cursor: pointer;
   background-image: url(../images/radio-hover-none.svg);
+}
+
+input[type="radio"]:focus + span {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../images/radio-no.svg);
+  background-repeat: no-repeat;
+  cursor: pointer;
+  box-shadow: 0 0 0 2px #000;
 }
 
 label.control {
@@ -1260,6 +1289,18 @@ label.control {
   cursor: pointer;
 }
 
+.control-input[type="checkbox"]:checked:focus + span {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../images/checkbox.svg);
+  background-repeat: no-repeat;
+  cursor: pointer;
+  box-shadow: 0 0 0 2px #000;
+}
+
 input[type="checkbox"] + span {
   position: absolute;
   left: 0;
@@ -1291,6 +1332,14 @@ input[type="checkbox"] + span:hover {
   background-image: url(../images/checkbox-white-none.svg);
   background-repeat: no-repeat;
   cursor: pointer;
+}
+
+input:focus + span {
+  box-shadow: 0 0 0 2px #000;
+}
+
+product-group:focus + span {
+  box-shadow: 0 0 0 2px #000;
 }
 
 /* Radio */
@@ -1666,7 +1715,7 @@ input[type="checkbox"] + span:hover {
   padding: 0 40px;
 }
 
-.h-slider {
+.header-slider {
   color: #2D3440;
   line-height: 46px;
   font-size: 36px;
@@ -1981,6 +2030,18 @@ input[type="checkbox"] + span:hover {
   border-radius: 25px 25px 25px 25px;
 }
 
+.contacts-phone:hover {
+  color: #FF2F64;
+}
+
+.contacts-phone:active {
+  color: red;
+}
+
+.contacts-phone:focus {
+  color: white;
+}
+
 .popover-close-button {
   position: absolute;
   top: -43px;
@@ -2151,7 +2212,7 @@ p.cart-item-price {
 }
 
 .cart-item-title .newsletter-button {
-  height: 44px;
+  height: auto;
 }
 
 .cart-item-last {
