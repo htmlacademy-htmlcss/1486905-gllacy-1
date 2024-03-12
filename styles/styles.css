@@ -1200,21 +1200,6 @@ body {
   background-image: url(../images/radio-disabled.svg);
 }
 
-.control-radio[type="radio"]:checked:focus + span {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-repeat: no-repeat;
-  cursor: pointer;
-  box-shadow: 0 0 0 2px #000;
-}
-
-input.control-radio:focus + span {
-  box-shadow: 0 0 0 2px #000;
-}
-
 .control-radio[type="radio"] + span {
   position: absolute;
   left: 0;
